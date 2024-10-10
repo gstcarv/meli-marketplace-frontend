@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const SearchBarBase = styled.div`
     height: 40px;
-    width: 40%;
+    width: 100%;
     background-color: #ffffff;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
     border-radius: ${({ theme }) => theme.radii.get('xs1')};

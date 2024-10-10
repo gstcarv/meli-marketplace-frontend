@@ -1,3 +1,5 @@
-import { ComponentProps } from 'react';
+import { ComponentProps, RefObject } from 'react';
 
-export type SearchBarProps = ComponentProps<'input'>;
+export type SearchBarProps = ComponentProps<'input'> & {
+    inputRef?: RefObject<HTMLInputElement>;
+};

@@ -1,5 +1,5 @@
 import { ThemeProvider } from '@meli/ui';
-import { MeliNavbar } from './components/MeliNavbar';
+import MeliNavbar from './components/MeliNavbar';
 
 export default function Root() {
     return (
