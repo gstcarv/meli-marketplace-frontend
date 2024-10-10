@@ -3,6 +3,7 @@ import { constructApplications, constructRoutes, constructLayoutEngine } from 's
 import microfrontendLayout from './microfrontend-layout.html';
 
 import './css/normalize.css';
+import './css/main.css';
 
 const routes = constructRoutes(microfrontendLayout);
 const applications = constructApplications({

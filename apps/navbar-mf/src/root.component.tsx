@@ -1,5 +1,12 @@
 import { ThemeProvider } from '@meli/ui';
+import { MeliNavbar } from './components/MeliNavbar';
 
 export default function Root() {
-    return <ThemeProvider></ThemeProvider>;
+    return (
+        <ThemeProvider>
+            <header>
+                <MeliNavbar />
+            </header>
+        </ThemeProvider>
+    );
 }
