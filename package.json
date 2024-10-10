@@ -1,5 +1,5 @@
 {
-  "name": "meli-marketplace",
+  "name": "@meli/marketplace",
   "private": true,
   "scripts": {
     "build": "turbo build",

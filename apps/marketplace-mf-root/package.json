@@ -1,5 +1,5 @@
 {
-    "name": "@meli/marketplace-mf-root",
+    "name": "@marketplace/marketplace-mf-root",
     "version": "1.0.0",
     "scripts": {
         "dev": "webpack serve --port 9000 --env isLocal",
