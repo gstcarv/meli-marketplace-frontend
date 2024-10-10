@@ -1,4 +1,4 @@
 {
-    "extends": ["@meli/eslint-config/library.js"],
+    "extends": ["@meli/eslint-config/react-internal.js"],
     "parser": "@babel/eslint-parser"
 }

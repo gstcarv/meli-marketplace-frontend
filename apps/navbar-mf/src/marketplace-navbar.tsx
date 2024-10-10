@@ -1,16 +1,15 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import singleSpaReact from "single-spa-react";
-import Root from "./root.component";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import singleSpaReact from 'single-spa-react';
+import Root from './root.component';
 
 const lifecycles = singleSpaReact({
     React,
     ReactDOM,
     rootComponent: Root,
-    // @ts-ignore
-    errorBoundary(err, info, props) {
+    errorBoundary() {
         // Customize the root error boundary for your microfrontend here.
-        return null;
+        return <></>;
     },
 });
 

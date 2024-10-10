@@ -1,7 +1,4 @@
 {
-  "extends": [
-    "ts-react-important-stuff",
-    "plugin:prettier/recommended"
-  ],
-  "parser": "@babel/eslint-parser"
+    "extends": ["@meli/eslint-config/react-internal.js"],
+    "parser": "@babel/eslint-parser"
 }
