@@ -1,4 +1,5 @@
 {
     "extends": "@meli/typescript-config/react-spa.json",
-    "include": ["src/**/*"]
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "dist"]
 }

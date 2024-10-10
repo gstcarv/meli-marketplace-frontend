@@ -1,5 +1,5 @@
-// import { Button } from '@meli/ui';
+import { ThemeProvider } from '@meli/ui';
 
 export default function Root() {
-    return <section></section>;
+    return <ThemeProvider></ThemeProvider>;
 }
