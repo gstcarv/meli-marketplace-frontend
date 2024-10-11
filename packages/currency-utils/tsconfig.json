@@ -1,0 +1,8 @@
+{
+    "extends": "@meli/typescript-config/base.json",
+    "compilerOptions": {
+        "outDir": "dist"
+    },
+    "include": ["src", "./index.ts", "../design-tokens/src/lib"],
+    "exclude": ["node_modules", "dist"]
+}

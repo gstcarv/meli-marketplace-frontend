@@ -17,3 +17,8 @@ export function createTokens<T extends TokenOptions>(tokens: T) {
         get: <Key extends keyof T>(token: Key): T[Key] => tokens[token]
     };
 }
+
+/**
+ * Helper function to get provided from createTokens function
+ */
+export type GetTokens<T> = T extends { get: (tokens: infer Tokens) => void } ? Tokens : never;

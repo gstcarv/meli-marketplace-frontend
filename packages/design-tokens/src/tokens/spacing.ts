@@ -1,4 +1,4 @@
-import { createTokens } from '../lib/create-tokens';
+import { createTokens, GetTokens } from '../lib/create-tokens';
 
 export const spacing = createTokens({
     xs2: '0.125rem',
@@ -11,3 +11,5 @@ export const spacing = createTokens({
     xl2: '2.75rem',
     xl3: '4rem'
 } as const);
+
+export type Spacing = GetTokens<typeof spacing>;

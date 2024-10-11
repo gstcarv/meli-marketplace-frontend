@@ -1,5 +1,6 @@
 import { PropsWithChildren } from 'react';
+import { Container } from './styled';
 
 export const PageContainer = ({ children }: PropsWithChildren) => {
-    return <>children</>;
+    return <Container>{children}</Container>;
 };

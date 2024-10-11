@@ -6,7 +6,7 @@ const meliApi = axios.create({
     baseURL: config.services.meli.url
 });
 
-export function searchItems(q: string) {
+export function searchItems(q: string | undefined | null) {
     return meliApi.get<MeliSiteItemsResponse>('/sites/MLA/search', {
         params: { q }
     });

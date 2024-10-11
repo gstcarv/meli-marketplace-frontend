@@ -6,7 +6,7 @@ import * as itemsService from '../../../services/items/items.service';
 import { Author, ProductItem } from '../dto';
 
 export type SearchItemsInput = {
-    search: string;
+    q?: string | null;
 };
 
 export type SearchItemsOutput = {
@@ -16,9 +16,7 @@ export type SearchItemsOutput = {
 };
 
 export async function searchItems(ctx: Context<SearchItemsInput>): Promise<SearchItemsOutput> {
-    const response = await itemsService.searchItems(ctx.payload.search);
-
-    console.log(response.config);
+    const response = await itemsService.searchItems(ctx.payload.q);
 
     return {
         author: config.author,

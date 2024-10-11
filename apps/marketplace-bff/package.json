@@ -4,19 +4,19 @@
     "description": "",
     "main": "index.ts",
     "scripts": {
-        "start": "nodemon src/main.ts"
+        "start": "nodemon src/main.ts",
+        "dev": "nodemon src/main.ts"
     },
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "@types/node": "^22.7.5",
         "axios": "^1.7.7",
         "dotenv": "^16.4.5",
-        "express": "^4.21.1",
-        "nodemon": "^3.1.7",
-        "typescript": "^5.6.3"
+        "express": "^4.21.1"
     },
     "devDependencies": {
+        "@types/node": "^22.7.5",
+        "typescript": "^5.6.3",
         "nodemon": "^3.1.7"
     }
 }
