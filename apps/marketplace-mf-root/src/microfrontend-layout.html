@@ -21,6 +21,10 @@
     <route default>
       <application name="@marketplace/navbar"></application>
       <application name="@marketplace/search"></application>
+
+      <route path="items/:id">
+        <application name="@marketplace/product"></application>
+      </route>
     </route>
   </main>
 </single-spa-router>
