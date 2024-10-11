@@ -1,4 +1,5 @@
 export { colors } from './src/tokens/colors';
+export type { Colors } from './src/tokens/colors';
 
 export { radii } from './src/tokens/radii';
 

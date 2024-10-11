@@ -17,5 +17,8 @@ export function formatCurrency(value: number, options?: FormatCurrencyOptions) {
         minimumFractionDigits: options?.hideCents ? 0 : 2
     });
 
-    return formatter.format(value);
+    let formatted = formatter.format(value);
+    formatted = formatted.replace(/\u00a0/g, ' ');
+
+    return formatted;
 }

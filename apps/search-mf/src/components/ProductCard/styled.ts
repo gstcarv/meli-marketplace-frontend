@@ -38,12 +38,30 @@ export const ProductCardBody = styled.div`
     width: 50%;
 `;
 
+export const ProductPriceWrapper = styled.div`
+    display: flex;
+    align-items: center;
+    gap: ${({ theme }) => theme.radii.get('md')};
+`;
+
 export const ProductPrice = styled.p`
     font-size: ${({ theme }) => theme.fontSize.get('h4')};
-    margin-bottom: ${({ theme }) => theme.radii.get('xl')};
 `;
 
 export const ProductTitle = styled.h2`
     font-size: ${({ theme }) => theme.fontSize.get('h6')};
     font-weight: ${({ theme }) => theme.fontWeight.get('thin')};
+    margin-top: ${({ theme }) => theme.radii.get('xl')};
+`;
+
+export const ProductCardEndWrapper = styled.div`
+    flex: 1;
+`;
+
+export const ProductCondition = styled.span`
+    font-size: ${({ theme }) => theme.fontSize.get('caption')};
+    color: ${({ theme }) => theme.colors.get('gray-600')};
+    display: block;
+    text-align: right;
+    padding-right: 20%;
 `;

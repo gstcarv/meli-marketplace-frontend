@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProductCard /> should hide shipping icon if is not free shipping 1`] = `
+<div>
+  <a
+    class="sc-ivxoEo jRXtjn"
+    href="/mock-id"
+  >
+    <div
+      class="sc-ghWlax JGFis"
+    >
+      <img
+        loading="lazy"
+        src="http://mock/picture.png"
+      />
+    </div>
+    <div
+      class="sc-kLhKbu fYzJMb"
+    >
+      <div
+        class="sc-ixGGxD heqVix"
+      >
+        <p
+          class="sc-khLCKb gUrwxB"
+        >
+          $ 4.445
+        </p>
+      </div>
+      <h2
+        class="sc-dstKZu bqLVKA ProductCard__title"
+      >
+        Mocked product title
+      </h2>
+    </div>
+    <div
+      class="sc-keTIit coVCDq"
+    >
+      <span
+        class="sc-dpBQxM kybXFR"
+      >
+        Produto novo
+      </span>
+    </div>
+  </a>
+</div>
+`;
+
+exports[`<ProductCard /> should render card correcly 1`] = `
+<div>
+  <a
+    class="sc-ivxoEo jRXtjn"
+    href="/mock-id"
+  >
+    <div
+      class="sc-ghWlax JGFis"
+    >
+      <img
+        loading="lazy"
+        src="http://mock/picture.png"
+      />
+    </div>
+    <div
+      class="sc-kLhKbu fYzJMb"
+    >
+      <div
+        class="sc-ixGGxD heqVix"
+      >
+        <p
+          class="sc-khLCKb gUrwxB"
+        >
+          $ 4.445
+        </p>
+        <div
+          aria-label="Frete grátis"
+          class="sc-dntaoT bOqdta"
+          color="success-500"
+        >
+          <svg
+            class="icon-truck"
+            color="#ffffff"
+            fill="none"
+            height="11"
+            size="11"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="11"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              height="13"
+              width="15"
+              x="1"
+              y="3"
+            />
+            <polygon
+              points="16 8 20 8 23 11 23 16 16 16 16 8"
+            />
+            <circle
+              cx="5.5"
+              cy="18.5"
+              r="2.5"
+            />
+            <circle
+              cx="18.5"
+              cy="18.5"
+              r="2.5"
+            />
+          </svg>
+        </div>
+      </div>
+      <h2
+        class="sc-dstKZu bqLVKA ProductCard__title"
+      >
+        Mocked product title
+      </h2>
+    </div>
+    <div
+      class="sc-keTIit coVCDq"
+    >
+      <span
+        class="sc-dpBQxM kybXFR"
+      >
+        Produto novo
+      </span>
+    </div>
+  </a>
+</div>
+`;

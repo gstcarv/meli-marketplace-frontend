@@ -3,11 +3,12 @@
 exports[`<SearchBar /> should render correctly 1`] = `
 <div>
   <div
-    class="sc-blHHSb hboDbF"
+    class="sc-blHHSb fSlVOg"
   >
     <input
       class="SearchBar__input"
-      placeholder="Nunca deixe de buscar..."
+      maxlength="255"
+      placeholder="Pesquisar um item"
     />
     <button
       aria-label="Pesquisar"

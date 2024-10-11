@@ -1,7 +1,18 @@
 import { ProductItem } from '@marketplace/bff';
 import { formatCurrency } from '@meli/currency-utils';
+import { TruckIcon } from '@meli/icons';
+import { Badge } from '@meli/ui';
 import { useMemo } from 'react';
-import { ProductCardBody, ProductCardContainer, ProductImageContainer, ProductPrice, ProductTitle } from './styled';
+import {
+    ProductCardBody,
+    ProductCardContainer,
+    ProductCardEndWrapper,
+    ProductCondition,
+    ProductImageContainer,
+    ProductPrice,
+    ProductPriceWrapper,
+    ProductTitle
+} from './styled';
 
 type Props = {
     product: Partial<ProductItem>;
@@ -13,6 +24,14 @@ export const ProductCard = ({ product }: Props) => {
         [product.price]
     );
 
+    const conditionLabel = useMemo(() => {
+        if (product.condition === 'new') return 'Produto novo';
+
+        if (product.condition === 'used') return 'Produto usado';
+
+        return product.condition;
+    }, [product.condition]);
+
     return (
         <ProductCardContainer to={`/${product.id}`}>
             <ProductImageContainer>
@@ -20,9 +39,22 @@ export const ProductCard = ({ product }: Props) => {
             </ProductImageContainer>
 
             <ProductCardBody>
-                <ProductPrice>{price}</ProductPrice>
+                <ProductPriceWrapper>
+                    <ProductPrice>{price}</ProductPrice>
+
+                    {product.free_shipping && (
+                        <Badge color='success-500' aria-label='Frete grátis'>
+                            <TruckIcon size={11} color='#ffffff' />
+                        </Badge>
+                    )}
+                </ProductPriceWrapper>
+
                 <ProductTitle className='ProductCard__title'>{product.title}</ProductTitle>
             </ProductCardBody>
+
+            <ProductCardEndWrapper>
+                <ProductCondition>{conditionLabel}</ProductCondition>
+            </ProductCardEndWrapper>
         </ProductCardContainer>
     );
 };

@@ -29,7 +29,7 @@ describe('<SearchBar />', () => {
         expect(onChangeFn).toHaveBeenCalledTimes(1);
     });
 
-    it('should submit form when search button pressed', () => {
+    it('should submit form when search button clicked', () => {
         const onSubmitFn = jest.fn((e) => e.preventDefault());
 
         render(

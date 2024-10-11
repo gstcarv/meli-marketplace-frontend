@@ -1,6 +1,7 @@
-import { createTokens } from '../lib/create-tokens';
+import { createTokens, GetTokens } from '../lib/create-tokens';
 
 export const colors = createTokens({
+    'success-500': '#00a650',
     'primary-500': '#FFE600',
     'accent-500': '#4A7FEC',
     'gray-100': '#EEEEEE',
@@ -10,3 +11,5 @@ export const colors = createTokens({
     'gray-500': '#9A9897',
     'gray-600': '#727272'
 } as const);
+
+export type Colors = GetTokens<typeof colors>;
