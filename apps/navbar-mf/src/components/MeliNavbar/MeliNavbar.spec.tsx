@@ -23,7 +23,7 @@ describe('<MeliNavbar />', () => {
             </ThemeProvider>
         );
 
-        const searchInput = screen.getByPlaceholderText(/Nunca deixe de buscar/i);
+        const searchInput = screen.getByPlaceholderText(/Nunca deixe de buscar.../i);
 
         fireEvent.change(searchInput, { target: { value: 'mock-text' } });
         userEvent.type(searchInput, '{enter}');

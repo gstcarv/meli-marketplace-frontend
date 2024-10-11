@@ -21,4 +21,14 @@ describe('useHandleSearchSubmit', () => {
 
         expect(mockSetSearchText).toHaveBeenCalledWith('mock-value');
     });
+
+    it('should do nothing if no value provided on search', () => {
+        const { result } = renderHook(() => useHandleSearchSubmit());
+
+        const mockInputRef = { current: { value: '' } } as React.RefObject<HTMLInputElement>;
+
+        result.current.onSubmit(mockInputRef)({ preventDefault: () => {} } as FormEvent);
+
+        expect(mockSetSearchText).not.toHaveBeenCalled();
+    });
 });

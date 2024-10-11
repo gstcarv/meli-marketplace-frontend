@@ -9,8 +9,14 @@ export const NavbarContainer = styled.nav`
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 10%;
+`;
+
+export const SearchForm = styled.form`
+    flex: 1;
 `;
 
 export const NavbarSearch: React.FC<SearchBarProps> = styled(SearchBar)`
     margin-left: ${({ theme }) => theme.spacing.get('md')};
+    width: auto;
 `;
