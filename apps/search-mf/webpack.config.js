@@ -1,15 +1,16 @@
-const { merge } = require("webpack-merge");
-const singleSpaDefaults = require("webpack-config-single-spa-react-ts");
+const { merge } = require('webpack-merge');
+const singleSpaDefaults = require('webpack-config-single-spa-react-ts');
 
 module.exports = (webpackConfigEnv, argv) => {
     const defaultConfig = singleSpaDefaults({
-        orgName: "marketplace",
-        projectName: "search",
+        orgName: 'marketplace',
+        projectName: 'search',
         webpackConfigEnv,
-        argv,
+        argv
     });
 
     return merge(defaultConfig, {
         // modify the webpack config however you'd like to by adding to this object
+        externals: ['styled-components']
     });
 };
