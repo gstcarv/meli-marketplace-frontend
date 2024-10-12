@@ -10,9 +10,9 @@ export type ProductItem = {
         currency: string;
         amount: number;
     };
-    picture: string;
+    picture?: string;
     condition: 'new' | 'used';
     free_shipping: boolean;
-    sold_quantity: number;
+    sold_quantity?: number;
     description: string;
 };

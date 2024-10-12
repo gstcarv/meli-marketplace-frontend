@@ -28,8 +28,8 @@ export async function searchItems(ctx: Context<SearchItemsInput>): Promise<Searc
             free_shipping: r.shipping.free_shipping,
             picture: r.thumbnail,
             price: {
-                amount: r.sale_price.amount,
-                currency: r.sale_price.currency_id
+                amount: r.price,
+                currency: r.currency_id
             }
         }))
     };

@@ -15,7 +15,8 @@ export const SearchBarBase = styled.div`
         border: none;
         padding: 0 ${({ theme }) => theme.spacing.get('md')};
         font-size: ${({ theme }) => theme.fontSize.get('body')};
-        font-weight: ${({ theme }) => theme.fontWeight.get('thin')};
+        font-weight: ${({ theme }) => theme.fontWeight.get('medium')};
+        font-family: sans-serif;
 
         &::placeholder {
             color: ${({ theme }) => theme.colors.get('gray-600')};

@@ -46,11 +46,12 @@ export const ProductPriceWrapper = styled.div`
 
 export const ProductPrice = styled.p`
     font-size: ${({ theme }) => theme.fontSize.get('h4')};
+    font-weight: ${({ theme }) => theme.fontWeight.get('regular')};
 `;
 
 export const ProductTitle = styled.h2`
     font-size: ${({ theme }) => theme.fontSize.get('h6')};
-    font-weight: ${({ theme }) => theme.fontWeight.get('thin')};
+    font-weight: ${({ theme }) => theme.fontWeight.get('regular')};
     margin-top: ${({ theme }) => theme.radii.get('xl')};
 `;
 
@@ -59,6 +60,7 @@ export const ProductCardEndWrapper = styled.div`
 `;
 
 export const ProductCondition = styled.span`
+    font-weight: ${({ theme }) => theme.fontWeight.get('regular')};
     font-size: ${({ theme }) => theme.fontSize.get('caption')};
     color: ${({ theme }) => theme.colors.get('gray-600')};
     display: block;

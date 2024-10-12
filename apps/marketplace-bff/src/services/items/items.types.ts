@@ -2,6 +2,7 @@ export type MeliItemResponse = {
     id: string;
     title: string;
     condition: string;
+    sold_quantity: number;
     thumbnail_id: string;
     catalog_product_id: null;
     listing_type_id: string;
@@ -53,6 +54,27 @@ export type MeliItemResponse = {
         benefits: null;
         promise: null;
         shipping_score: number;
+    };
+    pictures: Array<{
+        id: string;
+        url: string;
+        secure_url: string;
+        size: string;
+        max_size: string;
+        quality: string;
+    }>;
+};
+
+export type MeliItemDescriptionResponse = {
+    text: string;
+    plain_text: string;
+    last_updated: string;
+    date_created: string;
+    snapshot: {
+        url: string;
+        width: number;
+        height: number;
+        status: string;
     };
 };
 
