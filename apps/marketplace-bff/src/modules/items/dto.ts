@@ -11,7 +11,7 @@ export type ProductItem = {
         amount: number;
     };
     picture?: string;
-    condition: 'new' | 'used';
+    condition: 'new' | 'used' | 'not_specified';
     free_shipping: boolean;
     sold_quantity?: number;
     description: string;

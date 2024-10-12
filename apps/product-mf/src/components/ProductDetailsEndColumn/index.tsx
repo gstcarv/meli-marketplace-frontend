@@ -27,9 +27,11 @@ const ProductDetailsEndColumn = ({ product }: Props) => {
 
     return (
         <Container>
-            <InfoHeading>
-                <InfoHeadingText>{headingLabel}</InfoHeadingText>
-            </InfoHeading>
+            {headingLabel && (
+                <InfoHeading data-testid='info-heading'>
+                    <InfoHeadingText>{headingLabel}</InfoHeadingText>
+                </InfoHeading>
+            )}
 
             <ProductTitle>{product.title}</ProductTitle>
 

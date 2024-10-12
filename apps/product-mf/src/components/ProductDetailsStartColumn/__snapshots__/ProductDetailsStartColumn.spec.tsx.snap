@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProductDetailsStartColumn /> should render 1`] = `
+<div>
+  <section
+    class="sc-ixGGxD kCvfIP"
+  >
+    <div
+      class="sc-kLhKbu jaJwsm"
+    >
+      <img
+        loading="lazy"
+        src="http://mock/picture.png"
+      />
+    </div>
+    <hr
+      class="sc-fAUdSK kcdUKV"
+      my="xl2"
+    />
+    <section>
+      <h2
+        class="sc-khLCKb oHgEV"
+      >
+        Descrição do Produto
+      </h2>
+      <p
+        class="sc-dstKZu joZRes"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum interdum sapien, vitae consectetur diam dictum condimentum. Nunc nec tellus nisl. Nulla ullamcorper, dui quis aliquet ultrices, magna velit condimentum elit, quis blandit mauris nunc sit amet justo. Donec at turpis magna. Suspendisse potenti 
+      </p>
+    </section>
+  </section>
+</div>
+`;

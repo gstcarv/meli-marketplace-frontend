@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProductDetailsEndColumn /> should render correctly with condition and sold quantity 1`] = `
+<div>
+  <section
+    class="sc-dstKZu jaeZCx"
+  >
+    <div
+      class="sc-keTIit hHapOV"
+      data-testid="info-heading"
+    >
+      <span
+        class="sc-dpBQxM dHVDRJ"
+      >
+        Novo | +30mil vendidos
+      </span>
+    </div>
+    <h1
+      class="sc-jwIPbr cnOVex"
+    >
+      Mocked product title
+    </h1>
+    <div
+      class="sc-cHqXqK jBeJuW"
+    >
+      <div
+        class="sc-kLhKbu kqqbGY"
+      >
+        <span
+          class="sc-ixGGxD dHJjqB"
+        >
+          $ 4.445
+        </span>
+        <span
+          class="sc-khLCKb hKFZWp"
+        >
+          00
+        </span>
+      </div>
+    </div>
+    <button
+      class="sc-ivxoEo ciSPKU"
+      style="width: 100%;"
+    >
+      <span
+        class="sc-ghWlax LAGAc"
+      >
+        Comprar
+      </span>
+    </button>
+  </section>
+</div>
+`;

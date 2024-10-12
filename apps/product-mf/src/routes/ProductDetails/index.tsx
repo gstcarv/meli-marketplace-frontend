@@ -15,9 +15,9 @@ export const ProductDetails = () => {
     return (
         <PageContainer>
             <Container>
-                <ProductDetailsStartColumn product={product?.item as any} />
+                <ProductDetailsStartColumn product={product?.item} />
 
-                <ProductDetailsEndColumn product={product?.item as any} />
+                <ProductDetailsEndColumn product={product?.item} />
             </Container>
         </PageContainer>
     );

@@ -15,13 +15,13 @@ export const InfoHeadingText = styled.span`
     color: ${({ theme }) => theme.colors.get('gray-500')};
     font-size: ${({ theme }) => theme.fontSize.get('caption')};
     font-weight: ${({ theme }) => theme.fontWeight.get('regular')};
+    margin-bottom: ${({ theme }) => theme.spacing.get('xs')};
 `;
 
 export const ProductTitle = styled.h1`
     color: #000000;
     font-size: ${({ theme }) => theme.fontSize.get('h4')};
     font-weight: ${({ theme }) => theme.fontWeight.get('bold')};
-    margin-top: ${({ theme }) => theme.spacing.get('xs')};
     margin-bottom: 0;
 `;
 
