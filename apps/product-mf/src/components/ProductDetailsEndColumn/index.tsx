@@ -34,7 +34,7 @@ const ProductDetailsEndColumn = ({ product }: Props) => {
             <ProductTitle>{product.title}</ProductTitle>
 
             <PriceContainer>
-                <PriceText />
+                <PriceText price={product.price} />
             </PriceContainer>
 
             <Button style={{ width: '100%' }}>Comprar</Button>
