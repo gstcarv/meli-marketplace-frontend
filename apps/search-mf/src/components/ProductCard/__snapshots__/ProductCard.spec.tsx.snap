@@ -1,13 +1,79 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ProductCard /> should hide shipping icon if is not free shipping 1`] = `
+.c0 {
+  display: flex;
+  flex-direction: row;
+  padding: 2.75rem 0;
+}
+
+.c0:hover .ProductCard__title {
+  color: #4A7FEC;
+}
+
+.c1 {
+  width: 160px;
+  height: 160px;
+  border-radius: 0.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.c1:empty {
+  background: #EEEEEE;
+}
+
+.c1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.c2 {
+  padding: 1rem;
+  width: 50%;
+}
+
+.c3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.c4 {
+  font-size: 1.375rem;
+  font-weight: 300;
+}
+
+.c5 {
+  font-size: 1.125rem;
+  font-weight: 300;
+  margin-top: 1rem;
+}
+
+.c6 {
+  flex: 1;
+}
+
+.c7 {
+  font-weight: 300;
+  font-size: 0.875rem;
+  color: #727272;
+  display: block;
+  text-align: right;
+  padding-right: 20%;
+}
+
 <div>
   <a
-    class="sc-ivxoEo jRXtjn"
+    class="c0"
     href="/mock-id"
   >
     <div
-      class="sc-ghWlax JGFis"
+      class="c1"
     >
       <img
         loading="lazy"
@@ -15,28 +81,28 @@ exports[`<ProductCard /> should hide shipping icon if is not free shipping 1`] =
       />
     </div>
     <div
-      class="sc-kLhKbu fYzJMb"
+      class="c2"
     >
       <div
-        class="sc-ixGGxD heqVix"
+        class="c3"
       >
         <p
-          class="sc-khLCKb gUrwxB"
+          class="c4"
         >
           $ 4.445
         </p>
       </div>
       <h2
-        class="sc-dstKZu bqLVKA ProductCard__title"
+        class="c5 ProductCard__title"
       >
         Mocked product title
       </h2>
     </div>
     <div
-      class="sc-keTIit coVCDq"
+      class="c6"
     >
       <span
-        class="sc-dpBQxM kybXFR"
+        class="c7"
       >
         Produto novo
       </span>
@@ -46,13 +112,89 @@ exports[`<ProductCard /> should hide shipping icon if is not free shipping 1`] =
 `;
 
 exports[`<ProductCard /> should render card correcly 1`] = `
+.c5 {
+  width: 22px;
+  height: 22px;
+  border-radius: 9999px;
+  background: #00a650;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c0 {
+  display: flex;
+  flex-direction: row;
+  padding: 2.75rem 0;
+}
+
+.c0:hover .ProductCard__title {
+  color: #4A7FEC;
+}
+
+.c1 {
+  width: 160px;
+  height: 160px;
+  border-radius: 0.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.c1:empty {
+  background: #EEEEEE;
+}
+
+.c1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.c2 {
+  padding: 1rem;
+  width: 50%;
+}
+
+.c3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.c4 {
+  font-size: 1.375rem;
+  font-weight: 300;
+}
+
+.c6 {
+  font-size: 1.125rem;
+  font-weight: 300;
+  margin-top: 1rem;
+}
+
+.c7 {
+  flex: 1;
+}
+
+.c8 {
+  font-weight: 300;
+  font-size: 0.875rem;
+  color: #727272;
+  display: block;
+  text-align: right;
+  padding-right: 20%;
+}
+
 <div>
   <a
-    class="sc-ivxoEo jRXtjn"
+    class="c0"
     href="/mock-id"
   >
     <div
-      class="sc-ghWlax JGFis"
+      class="c1"
     >
       <img
         loading="lazy"
@@ -60,19 +202,19 @@ exports[`<ProductCard /> should render card correcly 1`] = `
       />
     </div>
     <div
-      class="sc-kLhKbu fYzJMb"
+      class="c2"
     >
       <div
-        class="sc-ixGGxD heqVix"
+        class="c3"
       >
         <p
-          class="sc-khLCKb gUrwxB"
+          class="c4"
         >
           $ 4.445
         </p>
         <div
           aria-label="Frete grátis"
-          class="sc-dntaoT bOqdta"
+          class="c5"
           color="success-500"
         >
           <svg
@@ -112,16 +254,16 @@ exports[`<ProductCard /> should render card correcly 1`] = `
         </div>
       </div>
       <h2
-        class="sc-dstKZu bqLVKA ProductCard__title"
+        class="c6 ProductCard__title"
       >
         Mocked product title
       </h2>
     </div>
     <div
-      class="sc-keTIit coVCDq"
+      class="c7"
     >
       <span
-        class="sc-dpBQxM kybXFR"
+        class="c8"
       >
         Produto novo
       </span>

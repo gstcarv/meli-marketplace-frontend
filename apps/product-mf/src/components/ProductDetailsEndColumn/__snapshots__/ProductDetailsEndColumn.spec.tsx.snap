@@ -1,49 +1,122 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ProductDetailsEndColumn /> should render correctly with condition and sold quantity 1`] = `
+.c8 {
+  height: 48px;
+  border: none;
+  padding: 0 2.75rem;
+  gap: 0 0.75rem;
+  border-radius: 0.5rem;
+  background-color: #4A7FEC;
+  transition: background-color 0.8s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.c8:hover {
+  background-color: #3a65ba;
+}
+
+.c9 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: 0.3px;
+}
+
+.c5 {
+  display: flex;
+}
+
+.c6 {
+  color: #000000;
+  font-size: 2.125rem;
+  font-weight: 300;
+}
+
+.c7 {
+  color: #000000;
+  font-size: 0.875rem;
+  font-weight: 300;
+  margin-top: 0.125rem;
+  margin-left: 0.125rem;
+}
+
+.c0 {
+  width: 100%;
+  flex: 0.25;
+  padding: 1.5rem;
+}
+
+.c1 {
+  display: flex;
+}
+
+.c2 {
+  display: flex;
+  color: #9A9897;
+  font-size: 0.875rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+.c3 {
+  color: #000000;
+  font-size: 1.375rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.c4 {
+  margin: 1rem 0;
+  margin-bottom: 2.75rem;
+}
+
 <div>
   <section
-    class="sc-dstKZu jaeZCx"
+    class="c0"
   >
     <div
-      class="sc-keTIit hHapOV"
+      class="c1"
       data-testid="info-heading"
     >
       <span
-        class="sc-dpBQxM dHVDRJ"
+        class="c2"
       >
         Novo | +30mil vendidos
       </span>
     </div>
     <h1
-      class="sc-jwIPbr cnOVex"
+      class="c3"
     >
       Mocked product title
     </h1>
     <div
-      class="sc-cHqXqK jBeJuW"
+      class="c4"
     >
       <div
-        class="sc-kLhKbu kqqbGY"
+        class="c5"
       >
         <span
-          class="sc-ixGGxD dHJjqB"
+          class="c6"
         >
           $ 4.445
         </span>
         <span
-          class="sc-khLCKb hKFZWp"
+          class="c7"
         >
           00
         </span>
       </div>
     </div>
     <button
-      class="sc-ivxoEo ciSPKU"
+      class="c8"
       style="width: 100%;"
     >
       <span
-        class="sc-ghWlax LAGAc"
+        class="c9"
       >
         Comprar
       </span>

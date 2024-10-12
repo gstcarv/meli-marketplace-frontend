@@ -3,7 +3,7 @@
 exports[`<SearchBar /> should render correctly 1`] = `
 <div>
   <div
-    class="sc-blHHSb fSlVOg"
+    class="sc-blHHSb bTSvdV"
   >
     <input
       class="SearchBar__input"

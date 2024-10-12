@@ -23,6 +23,8 @@ describe('useHandleSearchSubmit', () => {
     });
 
     it('should do nothing if no value provided on search', () => {
+        mockSetSearchText.mockClear();
+
         const { result } = renderHook(() => useHandleSearchSubmit());
 
         const mockInputRef = { current: { value: '' } } as React.RefObject<HTMLInputElement>;

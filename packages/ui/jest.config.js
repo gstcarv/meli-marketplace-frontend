@@ -7,5 +7,5 @@ module.exports = {
         '\\.(css)$': 'identity-obj-proxy',
         '\\.(png|jpg|jpeg|gif)$': 'identity-obj-proxy'
     },
-    setupFilesAfterEnv: ['@testing-library/jest-dom']
+    setupFilesAfterEnv: ['@testing-library/jest-dom', '<rootDir>/src/setupTests.ts']
 };

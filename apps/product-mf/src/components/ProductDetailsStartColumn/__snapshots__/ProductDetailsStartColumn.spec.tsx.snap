@@ -1,12 +1,57 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ProductDetailsStartColumn /> should render 1`] = `
+.c2 {
+  border: 0;
+  height: 1px;
+  background: #EEEEEE;
+  width: 100%;
+  margin: 2.75rem 0;
+}
+
+.c1 {
+  width: 100%;
+  height: 500px;
+  border-radius: 0.25rem;
+  display: flex;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.c1:empty {
+  background: #EEEEEE;
+}
+
+.c1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: 20%;
+}
+
+.c0 {
+  flex: 0.75;
+  padding: 1.5rem;
+}
+
+.c3 {
+  font-size: 1.375rem;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.c4 {
+  font-size: 1.125rem;
+  font-weight: 300;
+  color: #727272;
+}
+
 <div>
   <section
-    class="sc-ixGGxD kCvfIP"
+    class="c0"
   >
     <div
-      class="sc-kLhKbu jaJwsm"
+      class="c1"
     >
       <img
         loading="lazy"
@@ -14,17 +59,17 @@ exports[`<ProductDetailsStartColumn /> should render 1`] = `
       />
     </div>
     <hr
-      class="sc-fAUdSK kcdUKV"
+      class="c2"
       my="xl2"
     />
     <section>
       <h2
-        class="sc-khLCKb oHgEV"
+        class="c3"
       >
         Descrição do Produto
       </h2>
       <p
-        class="sc-dstKZu joZRes"
+        class="c4"
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum interdum sapien, vitae consectetur diam dictum condimentum. Nunc nec tellus nisl. Nulla ullamcorper, dui quis aliquet ultrices, magna velit condimentum elit, quis blandit mauris nunc sit amet justo. Donec at turpis magna. Suspendisse potenti 
       </p>

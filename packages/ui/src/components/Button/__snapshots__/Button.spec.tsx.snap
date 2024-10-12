@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> should render button correctly 1`] = `
+<div>
+  <button
+    class="sc-blHHSb fAfOAl"
+  >
+    <span
+      class="sc-gtLWhw euxXeq"
+    >
+      my button content
+    </span>
+  </button>
+</div>
+`;
