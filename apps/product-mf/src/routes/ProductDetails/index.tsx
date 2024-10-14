@@ -6,6 +6,7 @@ import { ProductDetailsSkeleton } from '../../components/ProductDetailsSkeleton'
 import ProductDetailsStartColumn from '../../components/ProductDetailsStartColumn';
 import { useGetProductById } from '../../hooks/useGetProductById';
 import { BackLink, Container } from './styled';
+import { Helmet } from 'react-helmet';
 
 export const ProductDetails = () => {
     const params = useParams<{ slug: string }>();
@@ -18,6 +19,8 @@ export const ProductDetails = () => {
 
     return (
         <ViewState isError={isError} isLoading={isLoading}>
+            {product && <Helmet title={`${product.item?.title} | Mercado Livre`} />}
+
             <PageContainer>
                 <PageContainer.Heading>
                     <ViewState.Loading>

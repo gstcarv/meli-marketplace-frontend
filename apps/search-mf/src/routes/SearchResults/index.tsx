@@ -4,6 +4,7 @@ import { useSearchParams } from 'react-router-dom';
 import { ProductList } from '../../components/ProductList';
 import ProductListSkeleton from '../../components/ProductListSkeleton';
 import { useSearchProducts } from '../../hooks/useSearchProducts';
+import { Helmet } from 'react-helmet';
 
 export const SearchResults = () => {
     const [params] = useSearchParams('search');
@@ -16,6 +17,8 @@ export const SearchResults = () => {
             isEmpty={products?.data?.items.length === 0}
             isError={products.isError}
         >
+            <Helmet title={`${params.get('search')} | Mercado Livre`} />
+
             <PageContainer>
                 <PageContainer.Heading>
                     <ViewState.Loading>
