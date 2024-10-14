@@ -1,2 +1,2 @@
 export { SearchBar } from './SearchBar';
-export type { SearchBarProps } from './types';
+export { type SearchBarProps } from './types';

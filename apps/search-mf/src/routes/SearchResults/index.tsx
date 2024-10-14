@@ -1,8 +1,9 @@
 import { ProductItem } from '@marketplace/bff';
-import { Breadcrumb, PageContainer } from '@meli/ui';
+import { Breadcrumb, PageContainer, Skeleton } from '@meli/ui';
 import { useSearchParams } from 'react-router-dom';
 import { ProductList } from '../../components/ProductList';
 import { useSearchProducts } from '../../hooks/useSearchProducts';
+import ProductListSkeleton from '../../components/ProductListSkeleton';
 
 export const SearchResults = () => {
     const [params] = useSearchParams('search');
@@ -13,18 +14,24 @@ export const SearchResults = () => {
 
     return (
         <PageContainer>
-            {!!products.data?.categories.length && (
-                <PageContainer.Heading>
+            <PageContainer.Heading>
+                {products.isLoading ? (
+                    <Skeleton width='30%' height={20} />
+                ) : !!products.data?.categories.length ? (
                     <Breadcrumb>
                         {products.data.categories.map((category) => (
                             <Breadcrumb.Item key={category}>{category}</Breadcrumb.Item>
                         ))}
                     </Breadcrumb>
-                </PageContainer.Heading>
-            )}
+                ) : null}
+            </PageContainer.Heading>
 
             <PageContainer.Content>
-                <ProductList products={(products.data?.items || []) as ProductItem[]} />
+                {products.isLoading ? (
+                    <ProductListSkeleton />
+                ) : (
+                    <ProductList products={(products.data?.items || []) as ProductItem[]} />
+                )}
             </PageContainer.Content>
         </PageContainer>
     );

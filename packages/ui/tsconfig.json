@@ -1,7 +1,9 @@
 {
     "extends": "@meli/typescript-config/react-library.json",
     "compilerOptions": {
-        "outDir": "dist"
+        "outDir": "dist",
+        "module": "ES6",
+        "moduleResolution": "Bundler"
     },
     "include": ["src", "./index.ts", "../design-tokens/src/lib"],
     "exclude": ["node_modules", "dist"]

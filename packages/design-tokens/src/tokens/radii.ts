@@ -1,4 +1,4 @@
-import { createTokens } from '../lib/create-tokens';
+import { createTokens, GetTokens } from '../lib/create-tokens';
 
 export const radii = createTokens({
     xs1: '0.125rem',
@@ -10,3 +10,5 @@ export const radii = createTokens({
     xl2: '2rem',
     full: '9999px'
 } as const);
+
+export type Radii = GetTokens<typeof radii>;

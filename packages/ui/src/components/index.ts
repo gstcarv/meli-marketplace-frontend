@@ -4,3 +4,4 @@ export * from './Divider';
 export * from './Badge';
 export * from './Button';
 export * from './Breadcrumb';
+export * from './Skeleton';
