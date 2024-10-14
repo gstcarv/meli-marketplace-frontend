@@ -1,3 +1,4 @@
+import { breakpoints } from '@meli/design-tokens';
 import { SearchBar, SearchBarProps } from '@meli/ui';
 import styled from 'styled-components';
 
@@ -10,6 +11,15 @@ export const NavbarContainer = styled.nav`
     justify-content: center;
     align-items: center;
     padding: 0 10%;
+    gap: ${({ theme }) => theme.spacing.get('md')};
+
+    @media screen and (max-width: ${breakpoints.get('sm')}) {
+        padding: 0 5%;
+
+        & .Navbar__logo {
+            display: none !important;
+        }
+    }
 `;
 
 export const SearchForm = styled.form`
@@ -17,6 +27,5 @@ export const SearchForm = styled.form`
 `;
 
 export const NavbarSearch: React.FC<SearchBarProps> = styled(SearchBar)`
-    margin-left: ${({ theme }) => theme.spacing.get('md')};
     width: auto;
 `;

@@ -1,3 +1,4 @@
+import { breakpoints } from '@meli/design-tokens';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
@@ -8,6 +9,10 @@ export const ProductCardContainer = styled(Link)`
 
     &:hover .ProductCard__title {
         color: ${({ theme }) => theme.colors.get('accent-500')};
+    }
+
+    @media screen and (max-width: ${breakpoints.get('sm')}) {
+        flex-direction: column;
     }
 `;
 
@@ -31,11 +36,20 @@ export const ProductImageContainer = styled.div`
         height: 100%;
         object-fit: contain;
     }
+
+    @media screen and (max-width: ${breakpoints.get('sm')}) {
+        width: 100%;
+        height: 250px;
+    }
 `;
 
 export const ProductCardBody = styled.div`
     padding: ${({ theme }) => theme.radii.get('xl')};
     width: 50%;
+
+    @media screen and (max-width: ${breakpoints.get('sm')}) {
+        width: 100%;
+    }
 `;
 
 export const ProductPriceWrapper = styled.div`
@@ -66,4 +80,9 @@ export const ProductCondition = styled.span`
     display: block;
     text-align: right;
     padding-right: 20%;
+
+    @media screen and (max-width: ${breakpoints.get('sm')}) {
+        text-align: left;
+        padding: 0 ${({ theme }) => theme.radii.get('xl')};
+    }
 `;
