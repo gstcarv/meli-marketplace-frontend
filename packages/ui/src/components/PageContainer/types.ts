@@ -1,7 +1,7 @@
-import { ComponentProps, PropsWithChildren } from 'react';
+import { HTMLProps } from '../../types';
 
-export type PageContainerProps = PropsWithChildren<ComponentProps<'div'>>;
+export type PageContainerProps = HTMLProps<HTMLDivElement>;
 
-export type PageContainerContentProps = PropsWithChildren<ComponentProps<'main'>>;
+export type PageContainerContentProps = HTMLProps<HTMLDivElement>;
 
-export type PageContainerHeadingProps = PropsWithChildren<ComponentProps<'div'>>;
+export type PageContainerHeadingProps = HTMLProps<HTMLDivElement>;

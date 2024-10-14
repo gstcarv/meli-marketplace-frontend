@@ -1,8 +1,7 @@
 import { breakpoints } from '@meli/design-tokens';
-import React, { ComponentProps } from 'react';
 import styled from 'styled-components';
 
-export const BreadcrumbContainer = styled.nav`` as React.FC<ComponentProps<'nav'>>;
+export const BreadcrumbContainer = styled.nav``;
 
 export const BreadcrumList = styled.ol`
     display: flex;

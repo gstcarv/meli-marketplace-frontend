@@ -8,14 +8,14 @@ export const Container = styled.div`
     @media screen and (max-width: ${breakpoints.get('sm')}) {
         margin: ${({ theme }) => theme.spacing.get('md')} 5%;
     }
-` as React.FC<ComponentProps<'div'>>;
+`;
 
 export const ContentContainer = styled.main`
     background-color: #ffffff;
     padding: ${({ theme }) => theme.spacing.get('md')};
     border-radius: ${({ theme }) => theme.radii.get('xs')};
-` as React.FC<ComponentProps<'main'>>;
+`;
 
 export const ContentHeader = styled.div`
     margin-bottom: ${({ theme }) => theme.spacing.get('md')};
-` as React.FC<ComponentProps<'div'>>;
+`;

@@ -39,4 +39,4 @@ export const PictureDivider = styled(Divider)`
     @media screen and (max-width: ${breakpoints.get('lg')}) {
         margin: ${({ theme }) => theme.spacing.get('lg')} 0;
     }
-` as React.FC<ComponentProps<'hr'>>;
+`;

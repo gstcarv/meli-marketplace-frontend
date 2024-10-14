@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { HTMLProps } from './types';
 
 export const GlobalStyle = createGlobalStyle`
   body {
@@ -15,4 +16,4 @@ export const GlobalStyle = createGlobalStyle`
     color: initial;
     text-decoration: none;
   }
-` as React.FC;
+` as React.FC<HTMLProps<HTMLDivElement>>;
