@@ -2,10 +2,33 @@
 
 exports[`<PageContainer /> should render correctly 1`] = `
 <div>
-  <main
-    class="sc-blHHSb eTIVia"
+  <div
+    class="sc-blHHSb cbkuIy"
   >
-    mock-page-content
-  </main>
+    <main
+      class="sc-gtLWhw bXRjqK"
+    >
+      mock-page-content
+    </main>
+  </div>
+</div>
+`;
+
+exports[`<PageContainer /> should render with heading 1`] = `
+<div>
+  <div
+    class="sc-blHHSb cbkuIy"
+  >
+    <div
+      class="sc-egkSDF dekWDE"
+    >
+      mock-page-heading
+    </div>
+    <main
+      class="sc-gtLWhw bXRjqK"
+    >
+      mock-page-content
+    </main>
+  </div>
 </div>
 `;

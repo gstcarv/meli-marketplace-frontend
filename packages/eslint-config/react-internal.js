@@ -38,7 +38,8 @@ module.exports = {
         }
     },
     rules: {
-        'no-redeclare': 'off'
+        'no-redeclare': 'off',
+        'react/display-name': 'off'
     },
     ignorePatterns: [
         // Ignore dotfiles
