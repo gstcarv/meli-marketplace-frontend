@@ -12,6 +12,11 @@ export type SearchItemsInput = {
     q?: string | null;
 };
 
+/**
+ * max quantity predefined by the exercice
+ */
+const MAX_ITEMS_QUANTITY = 4;
+
 export type SearchItemsOutput = {
     author: Author;
     categories: string[];
@@ -19,14 +24,14 @@ export type SearchItemsOutput = {
 };
 
 export async function searchItems(ctx: Context<SearchItemsInput>): Promise<SearchItemsOutput> {
-    const response = await meliService.searchItems(ctx.payload.q);
+    const items = await fetchItems(ctx.payload);
 
-    const categories = await resolveCategories(response.data);
+    const categories = await resolveCategories(items);
 
     return {
         author: config.author,
         categories,
-        items: response.data.results.map((r) => ({
+        items: items.map((r) => ({
             id: createItemSlug(r.id, r.title),
             title: r.title,
             condition: r.condition as ProductItem['condition'],
@@ -40,8 +45,14 @@ export async function searchItems(ctx: Context<SearchItemsInput>): Promise<Searc
     };
 }
 
-async function resolveCategories(response: MeliSiteItemsResponse) {
-    const mostFrequestCategoryId = getMostFrequentCategory(response.results.map((r) => r.category_id));
+export async function fetchItems(input: SearchItemsInput) {
+    const response = await meliService.searchItems(input.q);
+
+    return response.data.results.slice(0, MAX_ITEMS_QUANTITY);
+}
+
+async function resolveCategories(response: MeliSiteItemsResponse['results']) {
+    const mostFrequestCategoryId = getMostFrequentCategory(response.map((r) => r.category_id));
 
     if (!mostFrequestCategoryId) return [];
 
