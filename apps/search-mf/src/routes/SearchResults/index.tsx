@@ -9,15 +9,17 @@ import { Helmet } from 'react-helmet';
 export const SearchResults = () => {
     const [params] = useSearchParams('search');
 
-    const products = useSearchProducts({ q: params.get('search') });
+    const searchParam = params.get('search');
+
+    const products = useSearchProducts({ q: searchParam });
 
     return (
         <ViewState
-            isLoading={products.isLoading}
-            isEmpty={products?.data?.items.length === 0}
+            isLoading={products.isLoading && !!searchParam}
+            isEmpty={!products?.data?.items.length}
             isError={products.isError}
         >
-            <Helmet title={`${params.get('search')} | Mercado Livre`} />
+            <Helmet title={`${searchParam} | Mercado Livre`} />
 
             <PageContainer>
                 <PageContainer.Heading>

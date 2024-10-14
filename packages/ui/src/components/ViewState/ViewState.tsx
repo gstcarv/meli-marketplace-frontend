@@ -10,6 +10,6 @@ ViewState.Loading = createViewStateStatus((ctx) => ctx.isLoading);
 
 ViewState.Error = createViewStateStatus((ctx) => ctx.isError);
 
-ViewState.Empty = createViewStateStatus((ctx) => ctx.isEmpty);
+ViewState.Empty = createViewStateStatus((ctx) => ctx.isEmpty && !ctx.isError && !ctx.isLoading);
 
 ViewState.Success = createViewStateStatus((ctx) => !ctx.isEmpty && !ctx.isError && !ctx.isLoading);
