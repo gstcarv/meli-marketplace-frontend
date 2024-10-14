@@ -6,6 +6,7 @@ import * as meliService from '../../../services/meli/meli.service';
 
 import { Author, ProductItem } from '../dto';
 import { getMostFrequentCategory } from '../helpers/category.helper';
+import { createItemSlug } from '../helpers/slug.helper';
 
 export type SearchItemsInput = {
     q?: string | null;
@@ -26,7 +27,7 @@ export async function searchItems(ctx: Context<SearchItemsInput>): Promise<Searc
         author: config.author,
         categories,
         items: response.data.results.map((r) => ({
-            id: r.id,
+            id: createItemSlug(r.id, r.title),
             title: r.title,
             condition: r.condition as ProductItem['condition'],
             free_shipping: r.shipping.free_shipping,

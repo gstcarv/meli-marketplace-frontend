@@ -6,6 +6,7 @@ import * as meliService from '../../../services/meli/meli.service';
 
 import { Author, ProductItem } from '../dto';
 import { MeliItemResponse } from '../../../services/meli/types/items.types';
+import { getIdBySlug } from '../helpers/slug.helper';
 
 export type GetItemByIDInput = {
     id: string;
@@ -18,9 +19,11 @@ export type GetItemByIDOutput = {
 };
 
 export async function getItemById(ctx: Context<GetItemByIDInput>): Promise<GetItemByIDOutput> {
+    const id = getIdBySlug(ctx.payload.id);
+
     const [itemResponse, descriptionResponse] = await Promise.all([
-        meliService.getItemById(ctx.payload.id),
-        meliService.getItemDescription(ctx.payload.id)
+        meliService.getItemById(id),
+        meliService.getItemDescription(id)
     ]);
 
     const categories = await resolveCategories(itemResponse.data);
