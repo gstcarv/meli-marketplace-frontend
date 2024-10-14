@@ -10,7 +10,10 @@ export const Breadcrumb = ({ children, ...props }: PropsWithChildren) => {
             <BreadcrumList className='Breadcrumb__list'>
                 {Children.map(children, (child, index) => (
                     <Fragment key={index}>
-                        {child} {index !== totalChildren - 1 && <BreadcrumItemSeparator>|</BreadcrumItemSeparator>}
+                        {child}{' '}
+                        {index !== totalChildren - 1 && (
+                            <BreadcrumItemSeparator aria-hidden='true'>|</BreadcrumItemSeparator>
+                        )}
                     </Fragment>
                 ))}
             </BreadcrumList>

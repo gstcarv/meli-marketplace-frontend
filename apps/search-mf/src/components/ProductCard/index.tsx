@@ -35,7 +35,7 @@ export const ProductCard = ({ product }: Props) => {
     return (
         <ProductCardContainer to={`/${product.id}`}>
             <ProductImageContainer>
-                <img src={product.picture} loading='lazy' />
+                <img src={product.picture} loading='lazy' alt='Foto do produto' />
             </ProductImageContainer>
 
             <ProductCardBody>
@@ -43,7 +43,7 @@ export const ProductCard = ({ product }: Props) => {
                     <ProductPrice>{price}</ProductPrice>
 
                     {product.free_shipping && (
-                        <Badge color='success-500' aria-label='Frete grátis'>
+                        <Badge color='success-500' label='Frete grátis com ícone de caminhão'>
                             <TruckIcon size={11} color='#ffffff' />
                         </Badge>
                     )}

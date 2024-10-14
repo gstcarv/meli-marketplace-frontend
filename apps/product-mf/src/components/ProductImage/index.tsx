@@ -8,7 +8,7 @@ type Props = {
 export const ProductImage = ({ picture }: Props) => {
     return (
         <ProductImageContainer>
-            <img src={picture} loading='lazy' />
+            <img src={picture} loading='lazy' alt='Foto do produto' />
         </ProductImageContainer>
     );
 };

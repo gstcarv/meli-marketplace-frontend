@@ -6,7 +6,7 @@ export const BreadcrumbItemContent = styled.li`
     list-style-type: none;
     font-weight: ${({ theme }) => theme.fontWeight.get('regular')};
     font-size: ${({ theme }) => theme.fontSize.get('caption')};
-    color: ${({ theme }) => theme.colors.get('gray-600')};
+    color: ${({ theme }) => theme.colors.get('gray-700')};
     white-space: nowrap;
 
     @media screen and (max-width: ${breakpoints.get('sm')}) {

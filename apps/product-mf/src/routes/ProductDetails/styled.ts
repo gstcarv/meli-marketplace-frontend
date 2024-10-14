@@ -25,5 +25,5 @@ export const Container = styled.div`
 `;
 
 export const BackLink = styled.a`
-    color: ${({ theme }) => theme.colors.get('accent-500')};
+    color: ${({ theme }) => theme.colors.get('accent-600')};
 `;

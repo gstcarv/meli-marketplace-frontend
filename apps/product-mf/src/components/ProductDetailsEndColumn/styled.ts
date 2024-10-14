@@ -17,7 +17,7 @@ export const InfoHeading = styled.div`
 
 export const InfoHeadingText = styled.span`
     display: flex;
-    color: ${({ theme }) => theme.colors.get('gray-500')};
+    color: ${({ theme }) => theme.colors.get('gray-600')};
     font-size: ${({ theme }) => theme.fontSize.get('caption')};
     font-weight: ${({ theme }) => theme.fontWeight.get('regular')};
     margin-bottom: ${({ theme }) => theme.spacing.get('xs')};
