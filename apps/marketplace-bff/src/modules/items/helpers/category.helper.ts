@@ -13,5 +13,7 @@ export function getMostFrequentCategory(categories: string[]) {
         {} as Record<string, number>
     );
 
+    if (Object.keys(count).length === 0) return null;
+
     return Object.keys(count).reduce((a, b) => ((count?.[a] || 0) > (count?.[b] || 0) ? a : b));
 }

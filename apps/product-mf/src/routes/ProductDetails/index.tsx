@@ -1,44 +1,56 @@
-import { Breadcrumb, PageContainer, Skeleton } from '@meli/ui';
+import { Breadcrumb, PageContainer, Skeleton, StatusFeedback, ViewState } from '@meli/ui';
+import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import ProductDetailsEndColumn from '../../components/ProductDetailsEndColumn';
+import { ProductDetailsSkeleton } from '../../components/ProductDetailsSkeleton';
 import ProductDetailsStartColumn from '../../components/ProductDetailsStartColumn';
 import { useGetProductById } from '../../hooks/useGetProductById';
 import { Container } from './styled';
-import { ProductDetailsSkeleton } from '../../components/ProductDetailsSkeleton';
-import { useEffect } from 'react';
 
 export const ProductDetails = () => {
     const params = useParams<{ slug: string }>();
 
-    const { data: product, isLoading } = useGetProductById({ id: params?.slug || '' });
+    const { data: product, isLoading, isError } = useGetProductById({ id: params?.slug || '' });
 
     useEffect(() => window.scrollTo(0, 0), []);
 
     return (
-        <PageContainer>
-            <PageContainer.Heading>
-                {isLoading ? (
-                    <Skeleton width='30%' height={20} />
-                ) : !!product?.categories.length ? (
-                    <Breadcrumb>
-                        {product.categories.map((category) => (
-                            <Breadcrumb.Item key={category}>{category}</Breadcrumb.Item>
-                        ))}
-                    </Breadcrumb>
-                ) : null}
-            </PageContainer.Heading>
+        <ViewState isError={isError} isLoading={isLoading}>
+            <PageContainer>
+                <PageContainer.Heading>
+                    <ViewState.Loading>
+                        <Skeleton width='30%' height={20} />
+                    </ViewState.Loading>
 
-            <PageContainer.Content>
-                {isLoading ? (
-                    <ProductDetailsSkeleton />
-                ) : product ? (
-                    <Container>
-                        <ProductDetailsStartColumn product={product?.item} />
+                    <ViewState.Success>
+                        <Breadcrumb>
+                            {product?.categories.map((category) => (
+                                <Breadcrumb.Item key={category}>{category}</Breadcrumb.Item>
+                            ))}
+                        </Breadcrumb>
+                    </ViewState.Success>
+                </PageContainer.Heading>
 
-                        <ProductDetailsEndColumn product={product?.item} />
-                    </Container>
-                ) : null}
-            </PageContainer.Content>
-        </PageContainer>
+                <PageContainer.Content>
+                    <ViewState.Loading>
+                        <ProductDetailsSkeleton />
+                    </ViewState.Loading>
+
+                    <ViewState.Error>
+                        <StatusFeedback.Error />
+                    </ViewState.Error>
+
+                    <ViewState.Success>
+                        {product?.item && (
+                            <Container>
+                                <ProductDetailsStartColumn product={product?.item} />
+
+                                <ProductDetailsEndColumn product={product?.item} />
+                            </Container>
+                        )}
+                    </ViewState.Success>
+                </PageContainer.Content>
+            </PageContainer>
+        </ViewState>
     );
 };
