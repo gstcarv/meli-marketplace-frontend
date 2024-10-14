@@ -7,6 +7,7 @@
             "dependsOn": ["^lint"]
         },
         "test": {},
+        "test:coverage": {},
         "dev": {
             "cache": false,
             "persistent": true
