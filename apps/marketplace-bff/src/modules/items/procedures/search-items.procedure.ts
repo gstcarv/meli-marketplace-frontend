@@ -1,9 +1,11 @@
+import { MeliSiteItemsResponse } from '../../../services/meli/types/items.types';
 import { config } from '../../../config';
 import { Context } from '../../../config/types';
 
-import * as itemsService from '../../../services/items/items.service';
+import * as meliService from '../../../services/meli/meli.service';
 
 import { Author, ProductItem } from '../dto';
+import { getMostFrequentCategory } from '../helpers/category.helper';
 
 export type SearchItemsInput = {
     q?: string | null;
@@ -16,11 +18,13 @@ export type SearchItemsOutput = {
 };
 
 export async function searchItems(ctx: Context<SearchItemsInput>): Promise<SearchItemsOutput> {
-    const response = await itemsService.searchItems(ctx.payload.q);
+    const response = await meliService.searchItems(ctx.payload.q);
+
+    const categories = await resolveCategories(response.data);
 
     return {
         author: config.author,
-        categories: Array.from(new Set(response.data.results.map((r) => r.category_id))),
+        categories,
         items: response.data.results.map((r) => ({
             id: r.id,
             title: r.title,
@@ -33,4 +37,20 @@ export async function searchItems(ctx: Context<SearchItemsInput>): Promise<Searc
             }
         }))
     };
+}
+
+async function resolveCategories(response: MeliSiteItemsResponse) {
+    const mostFrequestCategoryId = getMostFrequentCategory(response.results.map((r) => r.category_id));
+
+    if (!mostFrequestCategoryId) return [];
+
+    try {
+        const categoryResponse = await meliService.getCategoryById(mostFrequestCategoryId);
+
+        return categoryResponse.data.path_from_root.map((c) => c.name);
+    } catch (err) {
+        console.error('error while trying to fetch categories from meli');
+
+        return [];
+    }
 }

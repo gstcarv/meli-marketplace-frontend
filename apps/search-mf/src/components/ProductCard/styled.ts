@@ -46,7 +46,7 @@ export const ProductPriceWrapper = styled.div`
 
 export const ProductPrice = styled.p`
     font-size: ${({ theme }) => theme.fontSize.get('h4')};
-    font-weight: ${({ theme }) => theme.fontWeight.get('regular')};
+    font-weight: ${({ theme }) => theme.fontWeight.get('medium')};
 `;
 
 export const ProductTitle = styled.h2`

@@ -11,9 +11,9 @@
         "noUncheckedIndexedAccess": true,
         "resolveJsonModule": true,
         "skipLibCheck": true,
-        "strict": true,
-        "target": "ES2022",
         "jsx": "react-jsx",
-        "declarationDir": "dist"
+        "strict": true,
+        "declarationDir": "dist",
+        "target": "ES2022"
     }
 }

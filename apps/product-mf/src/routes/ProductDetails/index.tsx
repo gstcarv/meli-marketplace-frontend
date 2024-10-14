@@ -1,4 +1,4 @@
-import { PageContainer } from '@meli/ui';
+import { Breadcrumb, PageContainer } from '@meli/ui';
 import { useParams } from 'react-router-dom';
 import ProductDetailsEndColumn from '../../components/ProductDetailsEndColumn';
 import ProductDetailsStartColumn from '../../components/ProductDetailsStartColumn';
@@ -14,11 +14,23 @@ export const ProductDetails = () => {
 
     return (
         <PageContainer>
-            <Container>
-                <ProductDetailsStartColumn product={product?.item} />
+            {!!product?.categories.length && (
+                <PageContainer.Heading>
+                    <Breadcrumb>
+                        {product.categories.map((category) => (
+                            <Breadcrumb.Item key={category}>{category}</Breadcrumb.Item>
+                        ))}
+                    </Breadcrumb>
+                </PageContainer.Heading>
+            )}
 
-                <ProductDetailsEndColumn product={product?.item} />
-            </Container>
+            <PageContainer.Content>
+                <Container>
+                    <ProductDetailsStartColumn product={product?.item} />
+
+                    <ProductDetailsEndColumn product={product?.item} />
+                </Container>
+            </PageContainer.Content>
         </PageContainer>
     );
 };

@@ -1,4 +1,5 @@
 {
+    "extends": "@meli/typescript-config/base.json",
     "compilerOptions": {
         "module": "commonjs",
         "target": "esnext",
