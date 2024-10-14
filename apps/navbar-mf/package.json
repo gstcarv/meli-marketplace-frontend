@@ -1,6 +1,7 @@
 {
     "name": "@marketplace/navbar",
     "version": "0.0.0",
+    "license": "MIT",
     "scripts": {
         "dev": "webpack serve --port 9001",
         "dev:standalone": "webpack serve --env standalone --port 8001",

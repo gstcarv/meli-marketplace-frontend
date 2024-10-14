@@ -1,8 +1,0 @@
-{
-    "extends": "@meli/typescript-config/react-library.json",
-    "compilerOptions": {
-        "outDir": "dist"
-    },
-    "include": ["src", "turbo", "./index.ts"],
-    "exclude": ["node_modules", "dist"]
-}

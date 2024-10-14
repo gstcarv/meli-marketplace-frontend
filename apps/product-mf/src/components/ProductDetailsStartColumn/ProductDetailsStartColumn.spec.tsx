@@ -1,6 +1,6 @@
 import { ProductItem } from '@marketplace/bff';
 import { ThemeProvider } from '@meli/ui';
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import ProductDetailsStartColumn from '.';
 
 const productStub: ProductItem = {

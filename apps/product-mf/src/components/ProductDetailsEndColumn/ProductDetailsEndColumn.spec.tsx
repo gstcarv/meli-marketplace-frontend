@@ -35,7 +35,7 @@ describe('<ProductDetailsEndColumn />', () => {
             </ThemeProvider>
         );
 
-        expect(screen.getByText(/\Novo \| \+30mil vendidos/i)).toBeInTheDocument();
+        expect(screen.getByText('Novo | +30mil vendidos')).toBeInTheDocument();
     });
 
     it('should render correctly when there is a small sold quantity', () => {

@@ -1,6 +1,5 @@
 import { breakpoints } from '@meli/design-tokens';
 import { Divider } from '@meli/ui';
-import { ComponentProps } from 'react';
 import styled from 'styled-components';
 
 export const Container = styled.section`

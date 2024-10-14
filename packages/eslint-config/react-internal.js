@@ -39,11 +39,16 @@ module.exports = {
     },
     rules: {
         'no-redeclare': 'off',
-        'react/display-name': 'off'
+        'react/display-name': 'off',
+
+        /**
+         * @see https://stackoverflow.com/questions/55807329/why-eslint-throws-no-unused-vars-for-typescript-interface
+         */
+        '@typescript-eslint/no-unused-vars': 'off'
     },
     ignorePatterns: [
         // Ignore dotfiles
-        '.*.js',
+        '*.js',
         'node_modules/',
         'dist/'
     ]

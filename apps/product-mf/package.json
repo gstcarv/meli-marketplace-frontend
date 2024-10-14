@@ -1,6 +1,7 @@
 {
     "name": "@marketplace/product",
     "version": "0.0.0",
+    "license": "MIT",
     "scripts": {
         "dev": "webpack serve --port 9003",
         "dev:standalone": "webpack serve --env standalone --port 8003",

@@ -1,5 +1,6 @@
 {
     "name": "@meli/marketplace",
+    "license": "MIT",
     "private": true,
     "scripts": {
         "build": "turbo build",

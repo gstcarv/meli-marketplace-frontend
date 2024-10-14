@@ -1,5 +1,4 @@
 import { breakpoints } from '@meli/design-tokens';
-import React, { ComponentProps } from 'react';
 import styled from 'styled-components';
 
 export const Container = styled.div`
