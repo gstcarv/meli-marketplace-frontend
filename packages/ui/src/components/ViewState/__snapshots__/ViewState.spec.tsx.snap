@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ViewState /> should render empty 1`] = `
+<div>
+  empty-content
+</div>
+`;
+
+exports[`<ViewState /> should render error 1`] = `
+<div>
+  error-content
+</div>
+`;
+
+exports[`<ViewState /> should render loading 1`] = `
+<div>
+  loading-content
+</div>
+`;
+
+exports[`<ViewState /> should render success 1`] = `
+<div>
+  success-content
+</div>
+`;
