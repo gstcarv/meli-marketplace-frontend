@@ -1,8 +1,13 @@
+import { breakpoints } from '@meli/design-tokens';
 import React, { ComponentProps } from 'react';
 import styled from 'styled-components';
 
 export const Container = styled.div`
     margin: ${({ theme }) => theme.spacing.get('xl')} 10%;
+
+    @media screen and (max-width: ${breakpoints.get('sm')}) {
+        margin: ${({ theme }) => theme.spacing.get('xl')} 5%;
+    }
 ` as React.FC<ComponentProps<'div'>>;
 
 export const ContentContainer = styled.main`

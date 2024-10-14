@@ -7,3 +7,5 @@ export { spacing, type Spacing } from './src/tokens/spacing';
 export { fontSize } from './src/tokens/fontSize';
 
 export { fontWeight } from './src/tokens/fontWeight';
+
+export { breakpoints, type Breakpoints } from './src/tokens/breakpoints';
