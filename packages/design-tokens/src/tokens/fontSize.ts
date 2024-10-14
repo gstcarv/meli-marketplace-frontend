@@ -8,5 +8,6 @@ export const fontSize = createTokens({
     h5: '1.25rem',
     h6: '1.125rem',
     body: '1rem',
-    caption: '0.875rem'
+    caption: '0.875rem',
+    caption2: '0.75rem'
 } as const);

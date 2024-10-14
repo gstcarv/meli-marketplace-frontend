@@ -1,6 +1,6 @@
 import { ProductItem } from '@marketplace/bff';
 import { ProductImage } from '../ProductImage';
-import { Container, DescriptionText, DescriptionTitle } from './styled';
+import { Container, DescriptionText, DescriptionTitle, PictureDivider } from './styled';
 import { Divider } from '@meli/ui';
 
 type Props = {
@@ -9,21 +9,25 @@ type Props = {
 
 const ProductDetailsStartColumn = ({ product }: Props) => {
     return (
-        <Container>
-            <ProductImage picture={product?.picture} />
+        <>
+            <Container className='ProductDetails__picture'>
+                <ProductImage picture={product?.picture} />
 
-            <Divider my='xl2' />
+                <PictureDivider />
+            </Container>
 
-            <section>
-                <DescriptionTitle>Descrição do Produto</DescriptionTitle>
+            <Container className='ProductDetails__info'>
+                <section>
+                    <DescriptionTitle>Descrição do Produto</DescriptionTitle>
 
-                <DescriptionText
-                    dangerouslySetInnerHTML={{
-                        __html: product?.description || ''
-                    }}
-                />
-            </section>
-        </Container>
+                    <DescriptionText
+                        dangerouslySetInnerHTML={{
+                            __html: product?.description || ''
+                        }}
+                    />
+                </section>
+            </Container>
+        </>
     );
 };
 

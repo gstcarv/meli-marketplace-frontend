@@ -6,7 +6,7 @@ export const Container = styled.div`
     margin: ${({ theme }) => theme.spacing.get('xl')} 10%;
 
     @media screen and (max-width: ${breakpoints.get('sm')}) {
-        margin: ${({ theme }) => theme.spacing.get('xl')} 5%;
+        margin: ${({ theme }) => theme.spacing.get('md')} 5%;
     }
 ` as React.FC<ComponentProps<'div'>>;
 

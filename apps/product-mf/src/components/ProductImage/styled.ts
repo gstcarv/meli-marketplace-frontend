@@ -1,9 +1,9 @@
+import { breakpoints } from '@meli/design-tokens';
 import styled from 'styled-components';
 
 export const ProductImageContainer = styled.div`
     width: 100%;
     height: 500px;
-
     border-radius: ${({ theme }) => theme.radii.get('xs')};
     display: flex;
     overflow: hidden;
@@ -17,6 +17,10 @@ export const ProductImageContainer = styled.div`
         width: 100%;
         height: 100%;
         object-fit: contain;
-        object-position: 20%;
+        object-position: center;
+    }
+
+    @media screen and (max-width: ${breakpoints.get('lg')}) {
+        height: 200px;
     }
 `;

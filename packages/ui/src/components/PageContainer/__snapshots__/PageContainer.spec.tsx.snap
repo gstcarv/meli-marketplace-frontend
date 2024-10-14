@@ -3,7 +3,7 @@
 exports[`<PageContainer /> should render correctly 1`] = `
 <div>
   <div
-    class="sc-blHHSb cbkuIy"
+    class="sc-blHHSb fbghbi"
   >
     <main
       class="sc-gtLWhw bXRjqK"
@@ -17,7 +17,7 @@ exports[`<PageContainer /> should render correctly 1`] = `
 exports[`<PageContainer /> should render with heading 1`] = `
 <div>
   <div
-    class="sc-blHHSb cbkuIy"
+    class="sc-blHHSb fbghbi"
   >
     <div
       class="sc-egkSDF dekWDE"

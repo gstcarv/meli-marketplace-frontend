@@ -34,6 +34,7 @@ exports[`<ProductDetailsEndColumn /> should render correctly with condition and 
   color: #000000;
   font-size: 2.125rem;
   font-weight: 300;
+  white-space: nowrap;
 }
 
 .c7 {
@@ -42,6 +43,7 @@ exports[`<ProductDetailsEndColumn /> should render correctly with condition and 
   font-weight: 300;
   margin-top: 0.125rem;
   margin-left: 0.125rem;
+  white-space: nowrap;
 }
 
 .c0 {
@@ -74,9 +76,27 @@ exports[`<ProductDetailsEndColumn /> should render correctly with condition and 
   margin-bottom: 2.75rem;
 }
 
+@media screen and (max-width: 992px) {
+  .c0 {
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .c3 {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .c4 {
+    margin-bottom: 1.5rem;
+  }
+}
+
 <div>
   <section
-    class="c0"
+    class="c0 ProductDetails__price"
   >
     <div
       class="c1"

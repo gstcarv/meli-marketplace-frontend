@@ -8,6 +8,7 @@ export const MainPriceText = styled.span`
     color: #000000;
     font-size: ${({ theme }) => theme.fontSize.get('h1')};
     font-weight: ${({ theme }) => theme.fontWeight.get('regular')};
+    white-space: nowrap;
 `;
 
 export const CentsText = styled.span`
@@ -16,4 +17,5 @@ export const CentsText = styled.span`
     font-weight: ${({ theme }) => theme.fontWeight.get('regular')};
     margin-top: ${({ theme }) => theme.spacing.get('xs2')};
     margin-left: ${({ theme }) => theme.spacing.get('xs2')};
+    white-space: nowrap;
 `;

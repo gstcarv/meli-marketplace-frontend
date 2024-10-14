@@ -26,7 +26,7 @@ const ProductDetailsEndColumn = ({ product }: Props) => {
     );
 
     return (
-        <Container>
+        <Container className='ProductDetails__price'>
             {headingLabel && (
                 <InfoHeading data-testid='info-heading'>
                     <InfoHeadingText>{headingLabel}</InfoHeadingText>

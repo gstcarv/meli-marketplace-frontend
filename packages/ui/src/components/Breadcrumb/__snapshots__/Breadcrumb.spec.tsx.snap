@@ -7,43 +7,43 @@ exports[`<Breadcrumb /> should render correctly 1`] = `
     class="sc-gtLWhw"
   >
     <ol
-      class="sc-egkSDF dybrUp Breadcrumb__list"
+      class="sc-egkSDF cdAgkE Breadcrumb__list"
     >
       <li
-        class="sc-blHHSb fwDEYd"
+        class="sc-blHHSb pyZuJ"
       >
         item 1
       </li>
        
       <span
-        class="sc-fAUdSK iLieeY"
+        class="sc-fAUdSK bvBqJh"
       >
         |
       </span>
       <li
-        class="sc-blHHSb fwDEYd"
+        class="sc-blHHSb pyZuJ"
       >
         item 2
       </li>
        
       <span
-        class="sc-fAUdSK iLieeY"
+        class="sc-fAUdSK bvBqJh"
       >
         |
       </span>
       <li
-        class="sc-blHHSb fwDEYd"
+        class="sc-blHHSb pyZuJ"
       >
         item 3
       </li>
        
       <span
-        class="sc-fAUdSK iLieeY"
+        class="sc-fAUdSK bvBqJh"
       >
         |
       </span>
       <li
-        class="sc-blHHSb fwDEYd"
+        class="sc-blHHSb pyZuJ"
       >
         item 4
       </li>
