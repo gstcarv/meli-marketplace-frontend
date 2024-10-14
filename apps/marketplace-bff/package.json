@@ -16,7 +16,8 @@
     },
     "devDependencies": {
         "@types/node": "^22.7.5",
-        "typescript": "^5.6.3",
-        "nodemon": "^3.1.7"
+        "nock": "^13.5.5",
+        "nodemon": "^3.1.7",
+        "typescript": "^5.6.3"
     }
 }
