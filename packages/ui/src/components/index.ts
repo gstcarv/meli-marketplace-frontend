@@ -6,3 +6,4 @@ export * from './Button';
 export * from './Breadcrumb';
 export * from './Skeleton';
 export * from './ViewState';
+export * from './StatusFeedback';
