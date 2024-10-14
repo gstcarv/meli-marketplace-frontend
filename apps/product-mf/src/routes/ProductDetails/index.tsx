@@ -1,14 +1,16 @@
 import { Breadcrumb, PageContainer, Skeleton, StatusFeedback, ViewState } from '@meli/ui';
 import { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import ProductDetailsEndColumn from '../../components/ProductDetailsEndColumn';
 import { ProductDetailsSkeleton } from '../../components/ProductDetailsSkeleton';
 import ProductDetailsStartColumn from '../../components/ProductDetailsStartColumn';
 import { useGetProductById } from '../../hooks/useGetProductById';
-import { Container } from './styled';
+import { BackLink, Container } from './styled';
 
 export const ProductDetails = () => {
     const params = useParams<{ slug: string }>();
+
+    const navigate = useNavigate();
 
     const { data: product, isLoading, isError } = useGetProductById({ id: params?.slug || '' });
 
@@ -24,6 +26,12 @@ export const ProductDetails = () => {
 
                     <ViewState.Success>
                         <Breadcrumb>
+                            <Breadcrumb.Item>
+                                <BackLink href='#' onClick={() => navigate(-1)}>
+                                    Voltar
+                                </BackLink>
+                            </Breadcrumb.Item>
+
                             {product?.categories.map((category) => (
                                 <Breadcrumb.Item key={category}>{category}</Breadcrumb.Item>
                             ))}
