@@ -3,7 +3,7 @@
 exports[`<Button /> should render button correctly 1`] = `
 <div>
   <button
-    class="sc-blHHSb fAfOAl"
+    class="sc-blHHSb hAuOKQ"
   >
     <span
       class="sc-gtLWhw euxXeq"

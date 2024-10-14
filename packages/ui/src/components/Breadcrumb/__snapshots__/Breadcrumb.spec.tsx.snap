@@ -10,40 +10,43 @@ exports[`<Breadcrumb /> should render correctly 1`] = `
       class="sc-egkSDF cdAgkE Breadcrumb__list"
     >
       <li
-        class="sc-blHHSb pyZuJ"
+        class="sc-blHHSb khfedp"
       >
         item 1
       </li>
        
       <span
+        aria-hidden="true"
         class="sc-fAUdSK bvBqJh"
       >
         |
       </span>
       <li
-        class="sc-blHHSb pyZuJ"
+        class="sc-blHHSb khfedp"
       >
         item 2
       </li>
        
       <span
+        aria-hidden="true"
         class="sc-fAUdSK bvBqJh"
       >
         |
       </span>
       <li
-        class="sc-blHHSb pyZuJ"
+        class="sc-blHHSb khfedp"
       >
         item 3
       </li>
        
       <span
+        aria-hidden="true"
         class="sc-fAUdSK bvBqJh"
       >
         |
       </span>
       <li
-        class="sc-blHHSb pyZuJ"
+        class="sc-blHHSb khfedp"
       >
         item 4
       </li>

@@ -16,6 +16,7 @@
         "build:types": "tsc"
     },
     "devDependencies": {
+        "@marketplace/bff": "*",
         "@babel/core": "^7.23.3",
         "@babel/eslint-parser": "^7.23.3",
         "@babel/plugin-transform-runtime": "^7.23.3",
@@ -59,7 +60,6 @@
         "webpack-merge": "^5.8.0"
     },
     "dependencies": {
-        "@marketplace/bff": "*",
         "@meli/currency-utils": "*",
         "@meli/ui": "*",
         "@tanstack/react-query": "^4",

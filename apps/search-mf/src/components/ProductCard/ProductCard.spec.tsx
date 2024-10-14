@@ -30,7 +30,7 @@ describe('<ProductCard />', () => {
         expect(screen.getByText('Mocked product title')).toBeInTheDocument();
         expect(screen.getByText('Produto novo')).toBeInTheDocument();
 
-        expect(screen.getByRole('generic', { name: 'Frete grátis' })).toBeInTheDocument();
+        expect(screen.getByRole('alert', { name: 'Frete grátis' })).toBeInTheDocument();
 
         expect(container).toMatchSnapshot();
     });
@@ -44,7 +44,7 @@ describe('<ProductCard />', () => {
             </ThemeProvider>
         );
 
-        expect(screen.queryByRole('generic', { name: 'Frete grátis' })).not.toBeInTheDocument();
+        expect(screen.queryByRole('alert', { name: 'Frete grátis' })).not.toBeInTheDocument();
 
         expect(container).toMatchSnapshot();
     });

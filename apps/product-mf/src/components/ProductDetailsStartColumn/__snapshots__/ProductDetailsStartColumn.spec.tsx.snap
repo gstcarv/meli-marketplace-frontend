@@ -89,6 +89,7 @@ exports[`<ProductDetailsStartColumn /> should render 1`] = `
       class="c1"
     >
       <img
+        alt="Foto do produto"
         loading="lazy"
         src="http://mock/picture.png"
       />

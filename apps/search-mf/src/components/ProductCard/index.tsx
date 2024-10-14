@@ -43,7 +43,7 @@ export const ProductCard = ({ product }: Props) => {
                     <ProductPrice>{price}</ProductPrice>
 
                     {product.free_shipping && (
-                        <Badge color='success-500' label='Frete grátis com ícone de caminhão'>
+                        <Badge color='success-500' label='Frete grátis'>
                             <TruckIcon size={11} color='#ffffff' />
                         </Badge>
                     )}

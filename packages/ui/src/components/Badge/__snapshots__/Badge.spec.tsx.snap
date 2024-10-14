@@ -4,6 +4,7 @@ exports[`<Badge /> should render correctly 1`] = `
 <div>
   <div
     class="sc-blHHSb jHmzXs"
+    role="alert"
   >
     2
   </div>

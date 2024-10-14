@@ -8,7 +8,7 @@ exports[`<ProductCard /> should hide shipping icon if is not free shipping 1`] =
 }
 
 .c0:hover .ProductCard__title {
-  color: #4A7FEC;
+  color: #3483fa;
 }
 
 .c1 {
@@ -102,6 +102,7 @@ exports[`<ProductCard /> should hide shipping icon if is not free shipping 1`] =
       class="c1"
     >
       <img
+        alt="Foto do produto"
         loading="lazy"
         src="http://mock/picture.png"
       />
@@ -155,7 +156,7 @@ exports[`<ProductCard /> should render card correcly 1`] = `
 }
 
 .c0:hover .ProductCard__title {
-  color: #4A7FEC;
+  color: #3483fa;
 }
 
 .c1 {
@@ -249,6 +250,7 @@ exports[`<ProductCard /> should render card correcly 1`] = `
       class="c1"
     >
       <img
+        alt="Foto do produto"
         loading="lazy"
         src="http://mock/picture.png"
       />
@@ -268,6 +270,8 @@ exports[`<ProductCard /> should render card correcly 1`] = `
           aria-label="Frete grátis"
           class="c5"
           color="success-500"
+          label="Frete grátis"
+          role="alert"
         >
           <svg
             class="icon-truck"
