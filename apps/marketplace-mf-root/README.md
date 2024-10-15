@@ -71,7 +71,8 @@ Exemplo: example-mf
             "test:coverage": "cross-env BABEL_ENV=test jest --coverage --passWithNoTests",
             "watch-tests": "cross-env BABEL_ENV=test jest --watch",
             "coverage": "cross-env BABEL_ENV=test jest --coverage",
-            "build:types": "tsc"
+            "build:types": "tsc",
+            "ts-check": "tsc"
         }
     }
     ```

@@ -6,6 +6,9 @@
         "lint": {
             "dependsOn": ["^lint"]
         },
+        "ts-check": {
+            "dependsOn": ["^ts-check"]
+        },
         "test": {},
         "test:coverage": {},
         "dev": {

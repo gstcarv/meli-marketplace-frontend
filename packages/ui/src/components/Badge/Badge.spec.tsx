@@ -6,7 +6,7 @@ describe('<Badge />', () => {
     it('should render correctly', () => {
         const { container } = render(
             <ThemeProvider>
-                <Badge>2</Badge>
+                <Badge label='mock-badge'>2</Badge>
             </ThemeProvider>
         );
 

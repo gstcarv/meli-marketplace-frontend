@@ -4,7 +4,7 @@ import { ThemeProvider as StyledThemeProvider } from 'styled-components';
 import { GlobalStyle } from '../globalStyles';
 import { theme } from './theme';
 
-export const ThemeProvider = (props: PropsWithChildren) => (
+export const ThemeProvider = (props: PropsWithChildren<unknown>) => (
     <StyledThemeProvider theme={theme}>
         <>
             {props.children}

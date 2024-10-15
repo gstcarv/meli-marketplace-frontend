@@ -8,6 +8,7 @@
         "test": "turbo run test",
         "test:coverage": "turbo run test:coverage",
         "lint": "turbo lint",
+        "ts-check": "turbo ts-check",
         "format": "prettier --write \"**/*.{ts,tsx,md}\""
     },
     "devDependencies": {

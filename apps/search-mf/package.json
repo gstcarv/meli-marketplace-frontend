@@ -14,8 +14,9 @@
         "test": "cross-env BABEL_ENV=test jest --passWithNoTests",
         "test:coverage": "cross-env BABEL_ENV=test jest --coverage --passWithNoTests",
         "watch-tests": "cross-env BABEL_ENV=test jest --watch",
-        "coverage": "cross-env BABEL_ENV=test jest --coverage",
-        "build:types": "tsc"
+        "coverage": "cross-env, BABEL_ENV=test jest --coverage",
+        "build:types": "tsc",
+        "ts-check": "tsc"
     },
     "devDependencies": {
         "@babel/core": "^7.23.3",

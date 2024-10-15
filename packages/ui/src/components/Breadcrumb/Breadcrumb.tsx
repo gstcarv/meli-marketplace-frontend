@@ -1,8 +1,9 @@
-import { Children, Fragment, PropsWithChildren } from 'react';
+import { Children, Fragment } from 'react';
 import { BreadcrumbItem } from './components/BreadcrumbItem';
-import { BreadcrumbContainer, BreadcrumList, BreadcrumItemSeparator } from './styled';
+import { BreadcrumbContainer, BreadcrumItemSeparator, BreadcrumList } from './styled';
+import { BreadcrumbProps } from './types';
 
-export const Breadcrumb = ({ children, ...props }: PropsWithChildren) => {
+export const Breadcrumb = ({ children, ...props }: BreadcrumbProps) => {
     const totalChildren = Children.count(children);
 
     return (

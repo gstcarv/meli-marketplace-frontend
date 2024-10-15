@@ -1,3 +1,3 @@
 import { PropsWithChildren } from 'react';
 
-export type BreadcrumbProps = PropsWithChildren;
+export type BreadcrumbProps = PropsWithChildren<unknown>;
