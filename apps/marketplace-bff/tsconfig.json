@@ -10,7 +10,6 @@
         "lib": ["dom", "es6"],
         "esModuleInterop": true
     },
-    "exclude": ["node_modules", "dist"],
-    "include": ["src/**/*.ts", "tests/**/*.spec.ts"],
-    "files": ["index.ts"]
+    "exclude": ["node_modules", "dist", "./index.ts"],
+    "include": ["src/**/*.ts", "tests/**/*.spec.ts", "api/*.ts"]
 }
