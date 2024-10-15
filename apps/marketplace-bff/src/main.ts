@@ -12,7 +12,7 @@ server.use(cors());
 
 server.get('/', (req, res) => res.send('ok'));
 
-// server.use(itemsRouter);
+server.use(itemsRouter);
 
 server.use(errorHandler);
 
