@@ -3,7 +3,9 @@
 exports[`<Badge /> should render correctly 1`] = `
 <div>
   <div
+    aria-label="mock-badge"
     class="sc-blHHSb jHmzXs"
+    label="mock-badge"
     role="alert"
   >
     2

@@ -9,7 +9,8 @@
         "test:coverage": "turbo run test:coverage",
         "lint": "turbo lint",
         "ts-check": "turbo ts-check",
-        "format": "prettier --write \"**/*.{ts,tsx,md}\""
+        "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+        "ci:check": "yarn lint && yarn ts-check && yarn test"
     },
     "devDependencies": {
         "prettier": "^3.2.5",

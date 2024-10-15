@@ -40,6 +40,7 @@ module.exports = {
     rules: {
         'no-redeclare': 'off',
         'react/display-name': 'off',
+        'turbo/no-undeclared-env-vars': 'off',
 
         /**
          * @see https://stackoverflow.com/questions/55807329/why-eslint-throws-no-unused-vars-for-typescript-interface
