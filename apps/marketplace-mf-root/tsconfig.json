@@ -2,8 +2,9 @@
     "extends": "ts-config-single-spa",
     "files": ["src/marketplace-root-config.ts"],
     "compilerOptions": {
-        "declarationDir": "dist"
+        "declarationDir": "dist",
+        "skipLibCheck": true
     },
     "include": ["src/**/*"],
-    "exclude": ["src/**/*.test*"]
+    "exclude": ["src/**/*.test*", "node_modules", "dist"]
 }
