@@ -20,6 +20,7 @@
         "@babel/preset-typescript": "7.17.12",
         "@babel/runtime": "7.18.3",
         "@sentry/cli": "^2.28.0",
+        "@types/systemjs": "6.1.1",
         "concurrently": "6.5.1",
         "cross-env": "7.0.3",
         "dotenv": "16.0.1",
@@ -40,7 +41,6 @@
         "webpack-merge": "5.8.0"
     },
     "dependencies": {
-        "@types/systemjs": "6.1.1",
         "single-spa": "5.9.4",
         "single-spa-layout": "2.1.0"
     },

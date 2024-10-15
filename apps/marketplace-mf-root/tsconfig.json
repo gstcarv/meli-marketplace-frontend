@@ -1,6 +1,6 @@
 {
     "extends": "ts-config-single-spa",
-    "files": ["src/meli-root-config.ts"],
+    "files": ["src/marketplace-root-config.ts"],
     "compilerOptions": {
         "declarationDir": "dist"
     },
