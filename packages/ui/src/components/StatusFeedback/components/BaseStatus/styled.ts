@@ -23,3 +23,7 @@ export const BaseStatusMessage = styled.h3`
     font-size: ${({ theme }) => theme.fontSize.get('caption')};
     font-weight: ${({ theme }) => theme.fontWeight.get('regular')};
 `;
+
+export const ActionContainer = styled.h3`
+    margin-top: ${({ theme }) => theme.spacing.get('md')};
+`;

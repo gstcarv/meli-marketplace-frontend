@@ -46,7 +46,7 @@ export const SearchResults = () => {
                     </ViewState.Empty>
 
                     <ViewState.Error>
-                        <StatusFeedback.Error />
+                        <StatusFeedback.Error onActionClick={products.refetch} />
                     </ViewState.Error>
 
                     <ViewState.Loading>

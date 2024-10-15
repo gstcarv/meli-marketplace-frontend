@@ -13,7 +13,7 @@ export const ProductDetails = () => {
 
     const navigate = useNavigate();
 
-    const { data: product, isLoading, isError } = useGetProductById({ id: params?.slug || '' });
+    const { data: product, isLoading, isError, refetch } = useGetProductById({ id: params?.slug || '' });
 
     useEffect(() => window.scrollTo(0, 0), []);
 
@@ -48,7 +48,7 @@ export const ProductDetails = () => {
                     </ViewState.Loading>
 
                     <ViewState.Error>
-                        <StatusFeedback.Error />
+                        <StatusFeedback.Error onActionClick={refetch} />
                     </ViewState.Error>
 
                     <ViewState.Success>
