@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
     padding: ${({ theme }) => theme.spacing.get('lg')};
-    word-break: break-all;
+    word-break: break-word;
 
     @media screen and (max-width: ${breakpoints.get('lg')}) {
         padding: ${({ theme }) => theme.spacing.get('xs')};
