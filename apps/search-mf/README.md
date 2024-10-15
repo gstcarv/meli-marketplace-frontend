@@ -8,13 +8,13 @@ Hospedado em https://meli-marketplace-search.vercel.app/marketplace-search.js
 flowchart LR
     main["@markplace/product"]
 
-    resultados["Resultados de Pesquisa"]
-    sugestoes["Sugestões de Pesquisa"]
-    filtros["Filtros Avançados"]
-    ordenacao["Ordenação"]
-    pagina["Página de Categorias"]
-    resultados["Resultados em Grade ou Lista"]
-    comparacao["Comparação de Produtos"]
+    resultados["Resultados de Pesquisa"]-->main
+    sugestoes["Sugestões de Pesquisa"]-->main
+    filtros["Filtros Avançados"]-->main
+    ordenacao["Ordenação"]-->main
+    pagina["Página de Categorias"]-->main
+    resultados["Resultados em Grade ou Lista"]-->main
+    comparacao["Comparação de Produtos"]-->main
 ```
 
 ## 📦 Instalação e Configuração
