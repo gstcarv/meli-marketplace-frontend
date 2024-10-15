@@ -43,6 +43,14 @@ Hospedado em https://meli-marketplace-root.vercel.app/
 
 ## 🏢 Visão geral da arquiteura
 
+A estrutura do projeto é composta pelos seguintes microfrontends:
+
+-   **`@marketplace/mf-root`**: O ponto de entrada da aplicação, gerenciando a montagem e a navegação entre os diferentes microfrontends.
+-   **`@marketplace/navbar-mf`**: A barra de navegação da aplicação, no nosso caso, a barra de pesquisa.
+-   **`@marketplace/search-mf`**: Implementa a funcionalidade de busca, permitindo que os usuários pesquisem produtos disponíveis no marketplace, realizem filtros e buscas avançadas.
+-   **`@marketplace/product-mf`**: Gerencia a exibição de items relacionados aos produtos, como por exemplo detalhes dos produtos, avaliações, favoritos, comentários, entre outros.
+-   **`@marketplace/bff`**: O BFF que serve como um intermediário entre o frontend e os serviços backend, adaptando as chamadas API para as necessidades dos microfrontends.
+
 ```mermaid
 flowchart TD
      subgraph apps
