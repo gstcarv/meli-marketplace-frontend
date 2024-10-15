@@ -25,9 +25,9 @@ Hospedado em https://meli-marketplace-root.vercel.app/
 | [`@meli/design-tokens`](./packages/design-tokens/)         | Design Tokens                              |
 | [`@meli/icons`](./packages/icons/)                         | Icons do Meli                              |
 | [`@meli/ui`](./packages/ui/)                               | Design System                              |
-| [`@meli/currency-utis`](./packages/currency-utils/)        | Pacote de utilidades para lidar com moedas |
+| [`@meli/currency-utils`](./packages/currency-utils/)       | Pacote de utilidades para lidar com moedas |
 | [`@meli/typescript-config`](./packages/typescript-config/) | Pacote de predefinições de typescript      |
-| [`@meli/estlint-config`](./packages/estlint-config/)       | Pacote de predefinições de eslint          |
+| [`@meli/eslint-config`](./packages/eslint-config/)         | Pacote de predefinições de eslint          |
 
 ## 🛠 Tecnologias Utilizadas
 
@@ -73,7 +73,7 @@ flowchart TD
     subgraph packages
         subgraph tools
             typescript(@meli/typescript-config)
-            eslint(@meli/estlint-config)
+            eslint(@meli/eslint-config)
         end
 
         subgraph design-system
@@ -86,7 +86,7 @@ flowchart TD
         end
 
         subgraph utils
-            currency(@meli/currency-utis)
+            currency(@meli/currency-utils)
         end
     end
 ```
