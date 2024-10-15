@@ -8,8 +8,8 @@
         "lint": "eslint . --max-warnings 0",
         "test": "jest",
         "test:coverage": "jest --coverage",
-        "storybook": "storybook dev -p 6006",
-        "build-storybook": "storybook build"
+        "storybook": "sb dev -p 6006",
+        "build-storybook": "sb build"
     },
     "devDependencies": {
         "@babel/preset-env": "^7.25.8",
