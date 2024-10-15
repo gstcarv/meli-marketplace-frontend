@@ -60,18 +60,16 @@
   <!-- Add your organization's prod import map URL to this script's src  -->
   <!-- <script type="systemjs-importmap" src="/importmap.json"></script> -->
 
-  <% if (isLocal) { %>
     <script type="systemjs-importmap">
     {
       "imports": {
-        "@marketplace/root-config": "http://localhost:9000/marketplace-root-config.js",
-        "@marketplace/navbar": "http://localhost:9001/marketplace-navbar.js",
-        "@marketplace/search": "http://localhost:9002/marketplace-search.js",
-        "@marketplace/product": "http://localhost:9003/marketplace-product.js"
+        "@marketplace/root-config": "<%= rootConfigUrl %>/marketplace-root-config.js",
+        "@marketplace/navbar": "<%= navbarMfUrl %>/marketplace-navbar.js",
+        "@marketplace/search": "<%= searchMfUrl %>/marketplace-search.js",
+        "@marketplace/product": "<%= productMfUrl %>/marketplace-product.js"
       }
     }
   </script>
-    <% } %>
 
       <!--
     If you need to support Angular applications, uncomment the script tag below to ensure only one instance of ZoneJS is loaded
