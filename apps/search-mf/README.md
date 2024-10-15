@@ -6,7 +6,7 @@ Hospedado em https://meli-marketplace-search.vercel.app/marketplace-search.js
 
 ```mermaid
 flowchart LR
-    main["@markplace/product"]
+    main["@markplace/search"]
 
     resultados["Resultados de Pesquisa"]-->main
     sugestoes["Sugestões de Pesquisa"]-->main
