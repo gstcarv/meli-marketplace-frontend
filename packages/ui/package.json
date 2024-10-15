@@ -7,7 +7,9 @@
     "scripts": {
         "lint": "eslint . --max-warnings 0",
         "test": "jest",
-        "test:coverage": "jest --coverage"
+        "test:coverage": "jest --coverage",
+        "storybook": "storybook dev -p 6006",
+        "build-storybook": "storybook build"
     },
     "devDependencies": {
         "@babel/preset-env": "^7.25.8",
@@ -17,6 +19,14 @@
         "@meli/eslint-config": "*",
         "@meli/icons": "*",
         "@meli/typescript-config": "*",
+        "@storybook/addon-essentials": "7.6.10",
+        "@storybook/addon-interactions": "7.6.10",
+        "@storybook/addon-links": "7.6.10",
+        "@storybook/addon-onboarding": "^1.0.11",
+        "@storybook/blocks": "7.6.10",
+        "@storybook/react": "7.6.10",
+        "@storybook/react-webpack5": "7.6.10",
+        "@storybook/test": "7.6.10",
         "@testing-library/jest-dom": "^5.17.0",
         "@testing-library/react": "^12.1.2",
         "@turbo/gen": "^1.12.4",
@@ -32,6 +42,8 @@
         "jest-environment-jsdom": "^29.7.0",
         "jest-styled-components": "^7.2.0",
         "react-test-renderer": "^17.0.2",
+        "storybook": "7.6.10",
+        "storybook-addon-theme-provider": "^0.2.2",
         "typescript": "^5.3.3"
     },
     "peerDependencies": {
