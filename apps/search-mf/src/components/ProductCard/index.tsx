@@ -33,7 +33,7 @@ export const ProductCard = ({ product }: Props) => {
     }, [product.condition]);
 
     return (
-        <ProductCardContainer to={`/${product.id}`}>
+        <ProductCardContainer to={`/items/${product.id}`}>
             <ProductImageContainer>
                 <img src={product.picture} loading='lazy' alt='Foto do produto' />
             </ProductImageContainer>

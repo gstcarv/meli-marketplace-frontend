@@ -96,7 +96,7 @@ exports[`<ProductCard /> should hide shipping icon if is not free shipping 1`] =
 <div>
   <a
     class="c0"
-    href="/mock-id"
+    href="/items/mock-id"
   >
     <div
       class="c1"
@@ -244,7 +244,7 @@ exports[`<ProductCard /> should render card correcly 1`] = `
 <div>
   <a
     class="c0"
-    href="/mock-id"
+    href="/items/mock-id"
   >
     <div
       class="c1"
