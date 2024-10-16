@@ -12,25 +12,20 @@ export const Container = styled.section`
 `;
 
 export const DescriptionTitle = styled.h2`
-    font-size: ${({ theme }) => theme.fontSize.get('h4')};
+    font-size: ${({ theme }) => theme.fontSize.get('h6')};
     margin-bottom: ${({ theme }) => theme.spacing.get('lg')};
     font-weight: ${({ theme }) => theme.fontWeight.get('medium')};
 
     @media screen and (max-width: ${breakpoints.get('lg')}) {
-        font-size: ${({ theme }) => theme.fontSize.get('h6')};
         margin-top: ${({ theme }) => theme.spacing.get('xl')};
         margin-bottom: ${({ theme }) => theme.spacing.get('sm')};
     }
 `;
 
 export const DescriptionText = styled.p`
-    font-size: ${({ theme }) => theme.fontSize.get('h6')};
+    font-size: ${({ theme }) => theme.fontSize.get('body')};
     font-weight: ${({ theme }) => theme.fontWeight.get('regular')};
     color: ${({ theme }) => theme.colors.get('gray-600')};
-
-    @media screen and (max-width: ${breakpoints.get('lg')}) {
-        font-size: ${({ theme }) => theme.fontSize.get('body')};
-    }
 `;
 
 export const PictureDivider = styled(Divider)`

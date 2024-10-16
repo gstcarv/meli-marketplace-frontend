@@ -21,7 +21,7 @@ const ProductDetailsStartColumn = ({ product }: Props) => {
 
                     <DescriptionText
                         dangerouslySetInnerHTML={{
-                            __html: product?.description || ''
+                            __html: product?.description || '-'
                         }}
                     />
                 </section>
