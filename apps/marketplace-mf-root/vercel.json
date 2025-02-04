@@ -2,10 +2,18 @@
     "rewrites": [
         {
             "source": "/(.*)",
-            "destination": "/index.html",
-            "headers": {
-                "Cache-Control": "public, max-age=3600, s-maxage=3600, stale-while-revalidate=86400"
-            }
+            "destination": "/index.html"
+        }
+    ],
+    "headers": [
+        {
+            "source": "/(.*)",
+            "headers": [
+                {
+                    "key": "Cache-Control",
+                    "value": "public, max-age=3600, s-maxage=3600, stale-while-revalidate=86400"
+                }
+            ]
         }
     ]
 }
