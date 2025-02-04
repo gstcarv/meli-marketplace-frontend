@@ -84,7 +84,7 @@ exports[`<ProductDetailsStartColumn /> should render 1`] = `
     >
       <img
         alt="Foto do produto"
-        loading="lazy"
+        fetchpriority="high"
         src="http://mock/picture.png"
       />
     </div>
