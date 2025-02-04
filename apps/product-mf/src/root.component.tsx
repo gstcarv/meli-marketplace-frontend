@@ -1,7 +1,7 @@
 import { ThemeProvider } from '@meli/ui';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { ProductDetails } from './routes/ProductDetails';
+import ProductDetails from './routes/ProductDetails';
 
 const queryClient = new QueryClient({
     defaultOptions: {

@@ -2,7 +2,7 @@ import { MagnifierIcon } from '@meli/icons';
 import { StatusFeedback } from '@meli/ui';
 import { Container } from './styled';
 
-export const SearchLanding = () => {
+const SearchLanding = () => {
     return (
         <Container>
             <StatusFeedback.Base
@@ -13,3 +13,5 @@ export const SearchLanding = () => {
         </Container>
     );
 };
+
+export default SearchLanding;

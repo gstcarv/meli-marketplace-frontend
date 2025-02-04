@@ -8,7 +8,7 @@ export const NavbarLogo = () => {
             className='Navbar__logo'
             style={{ display: 'flex', alignItems: 'center' }}
         >
-            <img src={meliLogo} alt='Logo do Mercado Livre' style={{ height: 40 }} />
+            <img src={meliLogo} alt='Logo do Mercado Livre' style={{ height: 40, width: 58 }} loading='lazy' />
         </a>
     );
 };

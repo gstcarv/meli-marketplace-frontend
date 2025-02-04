@@ -2,7 +2,7 @@ import { ThemeProvider } from '@meli/ui';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
-import { SearchResults } from '.';
+import SearchResults from '.';
 
 const mockQueryClient = new QueryClient({
     defaultOptions: { queries: { retry: false, cacheTime: 0 } }

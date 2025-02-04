@@ -6,7 +6,7 @@ import ProductListSkeleton from '../../components/ProductListSkeleton';
 import { useSearchProducts } from '../../hooks/useSearchProducts';
 import { Helmet } from 'react-helmet';
 
-export const SearchResults = () => {
+const SearchResults = () => {
     const [params] = useSearchParams('search');
 
     const searchParam = params.get('search');
@@ -57,3 +57,5 @@ export const SearchResults = () => {
         </ViewState>
     );
 };
+
+export default SearchResults;

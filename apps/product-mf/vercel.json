@@ -1,8 +1,8 @@
 {
-    "rewrites": [
+    "version": 2,
+    "routes": [
         {
-            "source": "/(.*)",
-            "destination": "/index.html",
+            "src": ".*",
             "headers": {
                 "Cache-Control": "public, max-age=3600, s-maxage=3600, stale-while-revalidate=86400"
             }

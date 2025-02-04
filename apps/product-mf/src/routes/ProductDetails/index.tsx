@@ -8,7 +8,7 @@ import { useGetProductById } from '../../hooks/useGetProductById';
 import { BackLink, Container } from './styled';
 import { Helmet } from 'react-helmet';
 
-export const ProductDetails = () => {
+const ProductDetails = () => {
     const params = useParams<{ slug: string }>();
 
     const navigate = useNavigate();
@@ -65,3 +65,5 @@ export const ProductDetails = () => {
         </ViewState>
     );
 };
+
+export default ProductDetails;
