@@ -7,6 +7,7 @@ import * as meliService from '../../../services/meli/meli.service';
 import { Author, ProductItem } from '../dto';
 import { MeliItemResponse } from '../../../services/meli/types/items.types';
 import { getIdBySlug } from '../helpers/slug.helper';
+import { withHTTPS } from '../helpers/domain';
 
 export type GetItemByIDInput = {
     id: string;
@@ -37,7 +38,7 @@ export async function getItemById(ctx: Context<GetItemByIDInput>): Promise<GetIt
             condition: itemResponse.data.condition as ProductItem['condition'],
             description: sanitizeDescription(descriptionResponse.data.plain_text) as string,
             free_shipping: itemResponse.data.shipping.free_shipping,
-            picture: itemResponse.data.pictures[0]?.url,
+            picture: withHTTPS(itemResponse.data.pictures[0]?.url),
             price: {
                 amount: itemResponse.data.price,
                 currency: itemResponse.data.currency_id

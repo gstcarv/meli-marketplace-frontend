@@ -7,6 +7,7 @@ import * as meliService from '../../../services/meli/meli.service';
 import { Author, ProductItem } from '../dto';
 import { getMostFrequentCategory } from '../helpers/category.helper';
 import { createItemSlug } from '../helpers/slug.helper';
+import { withHTTPS } from '../helpers/domain';
 
 export type SearchItemsInput = {
     q?: string | null;
@@ -36,7 +37,7 @@ export async function searchItems(ctx: Context<SearchItemsInput>): Promise<Searc
             title: r.title,
             condition: r.condition as ProductItem['condition'],
             free_shipping: r.shipping.free_shipping,
-            picture: r.thumbnail,
+            picture: withHTTPS(r.thumbnail),
             price: {
                 amount: r.price,
                 currency: r.currency_id
