@@ -18,13 +18,18 @@
   -->
 
   <main>
-    <route default>
-      <application name="@marketplace/navbar"></application>
-      <application name="@marketplace/search"></application>
+    <application name="@marketplace/navbar"></application>
 
-      <route path="items/:id">
-        <application name="@marketplace/product"></application>
-      </route>
+    <route path="/items" exact>
+      <application name="@marketplace/search"></application>
+    </route>
+
+    <route path="/" exact>
+      <application name="@marketplace/search"></application>
+    </route>
+
+    <route path="/items/:id">
+      <application name="@marketplace/product"></application>
     </route>
   </main>
 </single-spa-router>
